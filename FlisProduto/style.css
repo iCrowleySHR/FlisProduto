@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,300;1,400;1,500&display=swap');
 
-
 body{
     margin: 0;
     padding: 0;
@@ -57,7 +56,6 @@ li{
 
 .pesquisa > input{
     max-width: 650px;
-    
     display: flex;
     flex-wrap:nowrap;
     width: 100%;
@@ -66,6 +64,7 @@ li{
     margin-right: 5px;
     font-size: 50px;
     outline: none;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .pesquisa{
@@ -80,9 +79,6 @@ li{
     color: white;
     font-size: 25px;
 }
-
-
-
 
 .bloco{
     display: flex;
