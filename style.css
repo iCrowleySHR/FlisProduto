@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,300;1,400;1,500&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background-color: gray;
+    font-family: 'Raleway', sans-serif;
 }
 nav{
     display: flex;
@@ -53,7 +56,6 @@ li{
 
 .pesquisa > input{
     max-width: 650px;
-    
     display: flex;
     flex-wrap:nowrap;
     width: 100%;
@@ -62,6 +64,7 @@ li{
     margin-right: 5px;
     font-size: 50px;
     outline: none;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .pesquisa{
@@ -77,9 +80,6 @@ li{
     font-size: 25px;
 }
 
-
-
-
 .bloco{
     display: flex;
     flex-wrap:nowrap;
@@ -90,3 +90,37 @@ li{
     background-color: #737373;
     border-radius: 0px 25px 0px 0px;
 }
+
+.dropbtn {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    color: #737373;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
