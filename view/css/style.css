@@ -11,6 +11,7 @@
     --cor-fundo: #fff7f7;
     --cor-rosa-claro: #ffc8c4;
     --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
     --cor3: #fa9897;
     --cor4: #f84c58;
 
@@ -46,24 +47,24 @@ nav li {
 }
 
 nav li > a {
-    color: black;
+    color: var(--cor-nav-link);
     font-size: 20px;
     text-decoration: none;
     position: relative;
 }
 
-nav li > a::after {
+header nav li > a::after {
     content: " ";
     width: 0;
     height: 1px;
     position: absolute;
     top: 25px;
     left: 0;
-    background-color: black;
+    background-color: var(--cor-nav-link);
     transition: 300ms ease-in-out;
 }
 
-nav li > a:hover::after {
+header nav li > a:hover::after {
     width: 100%;
 }
 
@@ -89,7 +90,7 @@ nav a.inicio::after {
     border: none;
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: var(--cor-nav-link);
     cursor: pointer;
 }
 
@@ -109,7 +110,7 @@ nav a.inicio::after {
 }
 
 .dropdown-content a {
-    color: black;
+    color: var(--cor-nav-link);
     padding: 12px 15px;
     text-decoration: none;
     display: block;
@@ -128,10 +129,41 @@ main {
     min-height: calc(100vh - 137px);
 }
 
+article.container-artigo {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 85%;
+    height: 550px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #0000001e; 
+}
+
+article .nav-artigo { 
+    display: flex;
+    padding: 16px;
+    background: linear-gradient(to right, #f84c58, #fa9897); 
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+}
+
+article .nav-artigo a { 
+    color: white;
+    font-size: 22px;
+}
+
+article .nav-artigo a:hover { 
+    border-bottom: 1px solid white;
+} 
+
 article.container-planos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
 }
 
 .formulario  .titulo { 
