@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | Um serviço para elas!</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"> <!--Link para colocar imagem no title-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="view/js/script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="img/logo.png" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Saúde</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Fitness</button>
+                    <div class="dropdown-content">
+                        <a href="view/calendario.html">Alimentação</a>
+                        <a href="view/calendario.html">Exercícios</a>
+                        <a href="view/calendario.html">Calendário</a>
+                    </div>
+                </li>
+                <li><a href="#">Comunidade</a></li>
+                <li><a href="#">Assistência</a></li>
+                <li><a href="#">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div>
+
+
+            </div>
+        </article>
+        <article>
+            <div class="fonttitu">
+                Mulheres que buscam uma vida fitness!
+            </div>
+            <br><br>
+            <form class="formulario" method="post" action="enviaDados.php">
+        
+                <h2 class="titulo">Formulário para criar a sua rotina de exercícios personalizada!</h2>
+                <label class="label">
+                    
+                    <input type="text" class="input-bordas" placeholder="Peso" required="">
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <label class="label">
+                    
+                    <input type="text" class="input-bordas" placeholder="Altura" required="">
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <label class="label">
+                    
+                    <input type="text" class="input-bordas" placeholder="Assunto" required="">
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <label class="naoexibir">
+                    <span>Não preencher:</span><br>
+                    <input type="text" name="url" value=""></p>
+                </label> 
+                <label class="label">
+                    
+                    <textarea type="text" class="input-bordas textarea" rows="4" placeholder="Assunto" required=""></textarea>
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <button class="button-form borda-inversa"> Enviar</button>
+            </form>  
+        </article>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados a Flis ©</p>
+    </footer>
+</body>
+</html>
