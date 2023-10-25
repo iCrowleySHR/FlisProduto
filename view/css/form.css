@@ -1,29 +1,40 @@
-.fonttitu {
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa: #fa9897;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-rosa-escuro: #f84c58;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
+
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
+h2 {
     font-size: 50px;
+    margin: 30px 0;
     text-align: center;
 }
 
-.formulario .titulo {
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+form h3 {
     color: #757575;
     font-size: 1.5em;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
-.formulario {
-
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    overflow: hidden;
-    padding: 20px;
-}
-
 :focus {
     outline: none;
 }
 
-.label {
+.container-input {
     float: left;
     width: 100%;
     margin-bottom: 25px;
@@ -31,7 +42,6 @@
 }
 
 .input-bordas {
-
     font: 15px/24px "Lato", Arial, sans-serif;
     color: #333;
     width: 100%;
@@ -54,7 +64,7 @@
     right: 0;
     width: 0;
     height: 2px;
-    background-color: #3399FF;
+    background-color: var(--cor-rosa);
     transition: 0.2s;
     transition-delay: 0.2s;
 }
@@ -75,7 +85,7 @@
     left: 0;
     width: 2px;
     height: 0;
-    background-color: #3399FF;
+    background-color: var(--cor-rosa);
     transition: 0.2s;
 }
 
@@ -134,11 +144,6 @@
 }
 
 .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
-
     background: none;
     color: #39f;
-}
-
-.naoexibir {
-    display: none;
 }
