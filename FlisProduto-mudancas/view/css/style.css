@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
+    --cor3: #fa9897;
+    --cor4: #f84c58;
+    --branco: white;
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    font: normal 18px var(--font-padrao);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    background-color: var(--cor-rosa-claro);
+}
+
+header img {
+    width: 110px;
+    margin: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li {
+    margin: 8px 15px;
+}
+
+nav li > a {
+    color: var(--cor-nav-link);
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav li > a::after {
+    content: " ";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: var(--cor-nav-link);
+    transition: 300ms ease-in-out;
+}
+
+header nav li > a:hover::after {
+    width: 100%;
+}
+
+nav a.inicio {
+    padding: 10px 22px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: white;
+    transition: 250ms ease-out;
+}
+
+nav a.inicio::after {
+    display: none;
+}
+
+.dropbtn {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    color: var(--cor-nav-link);
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: var(--cor-nav-link);
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    min-height: calc(100vh - 137px);
+}
+
+article.container-artigo {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 85%;
+    height: 550px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 10px #0000001e; 
+}
+
+article .nav-artigo { 
+    display: flex;
+    padding: 16px;
+    background: linear-gradient(to right, #f84c58, #fa9897); 
+    justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+}
+
+article .nav-artigo a { 
+    color: white;
+    font-size: 22px;
+}
+
+article .nav-artigo a:hover { 
+    border-bottom: 1px solid white;
+} 
+
+article.container-planos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    width: 85%;
+}
+
+section.plano {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding: 13px;
+    width: 310px;
+    height: 480px;
+    transition: 300ms ease-out;
+    border-radius: 13px;
+    box-shadow: 1px 1px 10px #0000001c;
+    background-color: white;
+}
+
+section.plano:hover {
+    transform: scale(1.05);
+}
+
+.plano>img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.plano>h2 {
+   margin: 10px 0;
+}
+
+.plano>p {
+    font-size: 16px;
+}
+
+.plano>a.ver-mais {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: var(--cor-verde-claro);
+}
+
+footer {
+    padding: 8px;
+    text-align: center;
+    background-color: gray;
+}
