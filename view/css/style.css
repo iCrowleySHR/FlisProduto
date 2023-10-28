@@ -89,6 +89,7 @@ nav a.inicio::after {
     cursor: pointer;
 }
 
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -99,9 +100,11 @@ nav a.inicio::after {
     position: absolute;
     background-color: var(--cor-fundo);
     border-radius: 10px;
+    top: 29px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #00000033;
     z-index: 1000;
+    
 }
 
 .dropdown-content a {
@@ -109,14 +112,18 @@ nav a.inicio::after {
     padding: 12px 15px;
     text-decoration: none;
     display: block;
+    
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
     cursor: pointer;
+    
+    border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
+    
     display: block;
 }
 
@@ -203,8 +210,97 @@ section.plano:hover {
     background-color: var(--cor-verde-claro);
 }
 
+.menu-icon{
+    cursor: pointer;
+}
+
 footer {
     padding: 8px;
     text-align: center;
     background-color: gray;
+}
+
+@media screen and (max-width:1024px) {
+    .nav-header{
+        position: absolute;
+        display: none;
+        justify-content: center;      
+    }
+    .nav-header > ul{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 50px;
+        background-color: white;
+        max-width: 450px;
+        border: 1px solid black;
+        border-radius: 7px;
+        height: 250px;
+        z-index: 100;
+    }
+
+    .nav-header > ul > li{
+        max-width: 450px;
+        width: 1000px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        text-align: center;
+        margin: 0;
+    }
+    .nav-artigo{
+        z-index: 99;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 20px;
+        background-color: var(--cor-rosa-claro);
+    }
+    header > img{
+        position: absolute;
+        right: 0;
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-content {
+        display: flex;
+        position: absolute;
+        background-color: var(--cor-fundo);
+        border-radius: 10px;
+        min-width: 160px;
+        z-index: 1000;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .dropdown-content a {
+        color: var(--cor-nav-link);
+        padding: 12px 15px;
+        text-decoration: none;
+        display: flex;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+   
+}
+@media screen and (min-width:1025px) {
+    header > img{
+        display: none;
+    }
+    .nav-header{
+        display: flex;
+    }
 }
