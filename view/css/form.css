@@ -1,22 +1,99 @@
-.fonttitu {
+body {
+   
+    background-color: var(--corPagExercicio);
+}
+
+.titulos {
+    display: flex;
+
+}
+
+.quadradoes {
+    display: flex;
+    
+}
+
+.objetivo {
+    display: flex;
+
+}
+
+main > article > form > .enviareresultado {
+    display: flex;
+
+}
+
+.fonttituCalcCal {
+    font-weight: 500;
+    color: #5e5e5e;
+    font-size: 37px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    width: 490px;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 7%;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 2%;
+}
+
+.fonttituVideo {
+    font-weight: 500;
+    color: white;
     font-size: 50px;
-    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(to right, #f84c58, #fa9897);
+    width: 900px;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 7%;
+
+}
+
+.areaVideo {
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 7%;
+    border-radius: 15px;
+
 }
 
 .formulario .titulo {
-    color: #757575;
+    
+    color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
-.formulario {
+.button-objetivo {
+    border-radius: 15px;
+    margin-left: 2%;
 
-    max-width: 500px;
-    margin: auto;
-    background: white;
+}
+
+.formulario {
+    font-style: #fff;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #f84c58, #fa9897); 
+    max-width: 450px;
+    width: 700px;
     overflow: hidden;
     padding: 20px;
+    margin-left: 7%;
+    margin-top: 0;
+    margin-right: 2%;
+    
 }
 
 :focus {
@@ -30,8 +107,10 @@
     position: relative;
 }
 
-.input-bordas {
 
+
+.input-bordas {
+    border-radius: 15px;
     font: 15px/24px "Lato", Arial, sans-serif;
     color: #333;
     width: 100%;
@@ -57,6 +136,7 @@
     background-color: #3399FF;
     transition: 0.2s;
     transition-delay: 0.2s;
+    
 }
 
 .input-bordas~.focus-border:after {
@@ -65,7 +145,7 @@
     right: auto;
     left: 0;
     transition-delay: 0.6s;
-}
+    }
 
 .input-bordas~.focus-border i:before,
 .input-bordas~.focus-border i:after {
@@ -77,6 +157,7 @@
     height: 0;
     background-color: #3399FF;
     transition: 0.2s;
+    
 }
 
 .input-bordas~.focus-border i:after {
@@ -85,6 +166,7 @@
     top: auto;
     bottom: 0;
     transition-delay: 0.4s;
+    
 }
 
 .input-bordas:focus~.focus-border:before,
@@ -92,29 +174,44 @@
     width: 100%;
     transition: 0.2s;
     transition-delay: 0.6s;
+    
 }
 
 .input-bordas:focus~.focus-border:after {
     transition-delay: 0.2s;
+    
 }
 
 .input-bordas:focus~.focus-border i:before,
 .input-bordas:focus~.focus-border i:after {
     height: 100%;
     transition: 0.2s;
+    
 }
 
 .input-bordas:focus~.focus-border i:after {
     transition-delay: 0.4s;
+    
 }
 
 .button-form {
-    background-color: #39f;
+    background-color: #00bf62;
     padding: 0.5em 1.3em;
     color: #fff;
     font-size: 1.2em;
     border: none;
     cursor: pointer;
+    border-radius: 15px;
+}
+
+.button-form-objetivo {
+    background-color: white;
+    padding: 0.5em 1.3em;
+    color: black;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+
 }
 
 .borda-inversa {
@@ -130,13 +227,15 @@
     transition-duration: 0.5s;
     -webkit-transition-property: background;
     transition-property: background;
-    box-shadow: inset 0 0 0 2px #39f, 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0);
 }
+
+
 
 .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
 
     background: none;
-    color: #39f;
+    color: #00bf62;
 }
 
 .naoexibir {
