@@ -1,34 +1,45 @@
 main > section{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3%;
 }
 iframe{
     width: 55%;
     height: 65vh;
-    border-radius: 20px;
+    border-radius: 15px;
     border: none;
-    margin-left: 115px;
-    margin-top: 45px;
-    margin-bottom: 15px;
+    margin-right: 9%;
 }
+
 .lembrete{
-    background: linear-gradient(to right, #f84c58, #fa9897); 
-    width: 550px;
-    height: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 45px;
-    border-radius: 20px;
-    margin-left: 60px;
-    text-align: center;    
+    flex-direction: column;
+    margin-bottom: 46px;
+    box-shadow: 1px 1px 10px #0000001e; 
+ 
+}
+
+.lembrete > h2 {
+    background-color: #fff;
+    border-radius: 20px;  
     font-size: 33px;
+    text-align: center;
+    width: 550px;
+    height: 60px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .lembretes {
-    background-color: black;
+    background-color: #fff;
     width: 550px;
-    height: 530px;
-    
-    
+    height: 600px;
+    border-radius: 15px;
+    margin-right: 7%;
+    box-shadow: 1px 1px 10px #0000001e; 
 }
