@@ -1,7 +1,15 @@
+/* GERAL */
+
 body {
-   
     background-color: var(--corPagExercicio);
 }
+
+.displayflex {
+    display: flex;
+    margin-right: 10px;
+}
+
+/* CALCULADORA DE CALORIAS */
 
 .titulos {
     display: flex;
@@ -9,18 +17,13 @@ body {
 
 }
 
-.displayflex {
 
-    display: flex;
-    margin-right: 10px;
+/* FORMULÁRIO */
+
+.label-Resultado {
+    border-left: 70%;
+
 }
-
-.displayflexa {
-
-    display: flex;
-    margin-right: 5px;
-}
-
 
 .quadradoes {
     display: flex;
@@ -33,8 +36,11 @@ body {
 
 }
 
-main > article > form > .enviareresultado {
-    display: flex;
+.mostraResultado {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
 
 }
 
@@ -46,43 +52,104 @@ main > article > form > .enviareresultado {
     align-items: center; 
     justify-content: center;
     background-color: white;
-    width: 490px;
-    height: 70px;
+    width: 40%;
+    height: 60%;
     border-radius: 15px;
     margin-left: 7%;
     margin-top: 50px;
-    margin-bottom: 0;
     margin-right: 2%;
 }
 
-.fonttituVideo {
-    font-weight: 500;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    background: linear-gradient(to right, #f84c58, #fa9897);
-    width: 900px;
-    height: 70px;
-    border-radius: 15px;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 0;
-    margin-right: 7%;
-
+@media screen and (min-width:0px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 70%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
 }
 
-.areaVideo {
-    width: 900px;
-    height: 700px;
-    background-color: white;
-    margin-left: 2%;
-    margin-right: 7%;
-    margin-bottom: 10%;
+@media screen and (min-width:400px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 50%;
+        height: 80%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1074px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 40%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1197px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 30%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+.formulario {
+    font-style: #fff;
     border-radius: 15px;
-
-
+    background: linear-gradient(to bottom, #f84c58, #fa9897); 
+    max-width: 450px;
+    width: 700px;
+    
+    overflow: hidden;
+    padding: 20px;
+    margin-left: 7%;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 20%;
+    
 }
 
 .formulario .titulo {
@@ -104,22 +171,6 @@ main > article > form > .enviareresultado {
 
 }
 
-.formulario {
-    font-style: #fff;
-    border-radius: 15px;
-    background: linear-gradient(to bottom, #f84c58, #fa9897); 
-    max-width: 450px;
-    width: 700px;
-    
-    overflow: hidden;
-    padding: 20px;
-    margin-left: 7%;
-    margin-top: 0;
-    margin-right: 2%;
-    margin-bottom: 20%;
-    
-}
-
 :focus {
     outline: none;
 }
@@ -129,9 +180,8 @@ main > article > form > .enviareresultado {
     width: 100%;
     margin-bottom: 25px;
     position: relative;
+    
 }
-
-
 
 .input-bordas {
     border-radius: 15px;
@@ -145,10 +195,6 @@ main > article > form > .enviareresultado {
     transition: 0.4s;
 }
 
-.textarea {
-    resize: none !important;
-}
-
 .input-bordas~.focus-border:before,
 .input-bordas~.focus-border:after {
     content: "";
@@ -157,7 +203,6 @@ main > article > form > .enviareresultado {
     right: 0;
     width: 0;
     height: 2px;
-    background-color: #3399FF;
     transition: 0.2s;
     transition-delay: 0.2s;
     
@@ -179,7 +224,6 @@ main > article > form > .enviareresultado {
     left: 0;
     width: 2px;
     height: 0;
-    background-color: #3399FF;
     transition: 0.2s;
     
 }
@@ -226,7 +270,20 @@ main > article > form > .enviareresultado {
     border: none;
     cursor: pointer;
     border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    
+    
 }
+
+article > .quadradoes > form > .displayflex > button > h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+
 
 .button-form-objetivo {
     background-color: white;
@@ -253,12 +310,12 @@ main > article > form > .enviareresultado {
     -webkit-transition-property: background;
     transition-property: background;
     box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0);
+    
 }
 
 
 
 .borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
-
     background: none;
     color: #00bf62;
 }
@@ -266,3 +323,40 @@ main > article > form > .enviareresultado {
 .naoexibir {
     display: none;
 }
+
+/* TEXTO "VÍDEOS */
+
+.fonttituVideo {
+    font-weight: 500;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(to right, #f84c58, #fa9897);
+    width: 900px;
+    height: 70px;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 7%;
+
+}
+
+/* ÁREA VÍDEOS */
+
+.areaVideo {
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 7%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+
+
+}
+
+
+
