@@ -5,6 +5,7 @@ body {
 
 .titulos {
     display: flex;
+    justify-content: center;
 
 }
 
@@ -23,6 +24,7 @@ body {
 
 .quadradoes {
     display: flex;
+    justify-content: center;
     
 }
 

@@ -1,17 +1,29 @@
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
+    --cor3: #fa9897;
+    --cor4: #f84c58;
+    --corPagExercicio: #ededed;
+
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
 main > section{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-top: 3%;
+
 }
 iframe{
     width: 55%;
     height: 65vh;
     border-radius: 15px;
     border: none;
-    margin-right: 9%;
+    margin-right: 25px;
 }
 
 .lembrete{
@@ -36,10 +48,83 @@ iframe{
 }
 
 .lembretes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 550px;
     height: 600px;
     border-radius: 15px;
     margin-right: 7%;
+    overflow: hidden;
     box-shadow: 1px 1px 10px #0000001e; 
+}
+button{
+    width: 95%;
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: var(--font-padrao);
+    border-radius: 13px;
+    
+}
+.lembrete-criado{
+    margin-bottom: 10px;
+    background-color: #195274;
+    overflow: auto;
+    height: 85%;
+    width: 95%;
+    border-radius: 13px;
+}
+.criados{
+    margin: 15px auto;
+    width: 95%;
+    height: 75px;
+    background-color: #fa9897;
+    border-radius: 13px;
+}
+.lembrete-criado::-webkit-scrollbar {
+    width: 8px;             
+    
+  }
+  
+  .lembrete-criado::-webkit-scrollbar-track {
+    background: gray;       
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+.lembrete-criado::-webkit-scrollbar-thumb {
+    background-color: #212121;    
+    border-radius: 20px;       
+    border: 1px solid gray; 
+  }
+  #iframe::-webkit-scrollbar {
+    width: 8px;             
+    
+  }
+  
+  #iframe::-webkit-scrollbar-track {
+    background: gray;       
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  #iframe::-webkit-scrollbar-thumb {
+    background-color: #212121;    
+    border-radius: 20px;       
+    border: 1px solid gray; 
+  }
+@media screen and (max-width:1024px) {
+    iframe{
+        width: 80%;
+        height: 150vh;
+        border-radius: 15px;
+        border: none;
+        margin-right: 9%;
+        margin: 25px auto;
+    }
+
 }

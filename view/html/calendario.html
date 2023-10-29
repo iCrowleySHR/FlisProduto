@@ -8,11 +8,12 @@
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/calendario.css">
+    <script defer src="../js/script.js"></script>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="../img/logo.png" class="logo"></a>
-        <img src="./view/img/menu.png" alt="Icon Menu" class="menu-icon">
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
         <nav class="nav-header">
             <ul>
                 <li><a href="#">Saúde</a></li>
@@ -33,12 +34,23 @@
     <main>  
 
         <section>
-            <iframe src="../iframe/iframe.html"></iframe>
-        <div class="lembrete"> 
-            <h2>Lembretes</h2>
-               
-            <div class="lembretes"></div>
-        </div>  
+            <div class="lembrete"> 
+                <h2>Lembretes</h2> 
+                <div class="lembretes">
+                    <div class="lembrete-criado">
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                        <div class="criados"></div>
+                    </div>
+                    <button>Criar lembrete</button>
+                </div>
+            </div> 
+            <iframe src="../iframe/iframe.html" id="iframe"></iframe>
         </section>
         
     </main>
