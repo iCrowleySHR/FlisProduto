@@ -82,6 +82,13 @@ nav a.inicio::after {
     display: none;
 }
 
+article> img{
+    margin: 0 auto;
+    width: 100%;
+    height: 468px;
+    border-radius: 0px 0px 25px 25px;
+}
+
 .dropbtn {
     font-size: 20px;
     border: none;
@@ -148,7 +155,7 @@ article .nav-artigo {
     display: flex;
     padding: 16px;
     background: linear-gradient(to right, #f84c58, #fa9897); 
-    justify-content: space-between;
+    justify-content: center;
     border-radius: 25px 25px 0 0;
 }
 
@@ -165,7 +172,7 @@ article.container-planos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     width: 80%;
     width: 85%;
@@ -176,12 +183,15 @@ section.plano {
     flex-direction: column;
     margin-bottom: 60px;
     padding: 13px;
+    margin-left: 5%;
+    margin-right: 5%;
     width: 310px;
     height: 480px;
     transition: 300ms ease-out;
     border-radius: 13px;
     box-shadow: 1px 1px 10px #0000001c;
     background-color: white;
+    cursor: pointer;
 }
 
 section.plano:hover {
@@ -219,7 +229,7 @@ section.plano:hover {
 footer {
     padding: 8px;
     text-align: center;
-    background-color: gray;
+    background-color: var(--cor-rosa-claro);
 }
 
 @media screen and (max-width:1024px) {
@@ -266,7 +276,7 @@ footer {
     header > img{
         position: absolute;
         right: 0;
-        width: 50px;
+        width: 75px;
         margin-right: 5px;
     }
 
@@ -302,9 +312,6 @@ footer {
     #menu-margem{
        margin-bottom: -13px;
     }
-
-   
-   
 }
 @media screen and (min-width:1025px) {
     header > img{
