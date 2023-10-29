@@ -1,0 +1,34 @@
+main > section{
+    display: flex;
+
+}
+iframe{
+    width: 55%;
+    height: 65vh;
+    border-radius: 20px;
+    border: none;
+    margin-left: 115px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+.lembrete{
+    background: linear-gradient(to right, #f84c58, #fa9897); 
+    width: 550px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    border-radius: 20px;
+    margin-left: 60px;
+    text-align: center;    
+    font-size: 33px;
+}
+
+.lembretes {
+    background-color: black;
+    width: 550px;
+    height: 530px;
+    
+    
+}
