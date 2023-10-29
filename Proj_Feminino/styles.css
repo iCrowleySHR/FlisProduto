@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7f7;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left-container, .right-container {
+    flex: 1; 
+    padding: 10px;
+    border: 2px solid #FF00FF;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-container, .center-container {
+    flex: 1; 
+    padding: 10px;
+    border: 2px solid #FF00FF;
+}
+
+.img-expandir, .img-lembre {
+    max-width: 13%; 
+    height: auto; 
+}
+
+.img-expandir {
+    margin-bottom: 10%;
+}
+
+.img-perfil, .img-psicologa{
+    max-width: 25%; 
+    height: auto; 
+}
+
+.img-logo{
+    max-width: 20%; 
+    height: auto; 
+}
+
+
+.img-psic{
+    max-width: 100%; 
+    height: auto; 
+}
+
+.img-call {
+    max-width: 13%; 
+    height: auto; 
+}
+
+
+.chat {
+    width: 100%; 
+}
