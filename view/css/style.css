@@ -41,6 +41,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-top: 8px;
 }
 
 nav li {
@@ -88,6 +89,7 @@ nav a.inicio::after {
     font-family: 'Raleway', sans-serif;
     color: var(--cor-nav-link);
     cursor: pointer;
+    padding-bottom: 5px;
 }
 
 
@@ -119,13 +121,12 @@ nav a.inicio::after {
 .dropdown-content a:hover {
     background-color: #ddd;
     cursor: pointer;
-    
     border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
-    
     display: block;
+    
 }
 
 main {
@@ -236,10 +237,10 @@ footer {
         list-style: none;
         margin-top: 50px;
         background-color: white;
-        max-width: 450px;
+        max-width: 400px;
         border: 1px solid black;
         border-radius: 7px;
-        height: 250px;
+        height: 215px;
         z-index: 100;
     }
 
@@ -280,7 +281,7 @@ footer {
         border-radius: 10px;
         min-width: 160px;
         z-index: 1000;
-        top: 100px;
+        top: 80px;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -295,6 +296,14 @@ footer {
     .dropdown:hover .dropdown-content {
         display: flex;
     }
+    .fitnessNav{
+        display: none;
+    }
+    #menu-margem{
+       margin-bottom: -13px;
+    }
+
+   
    
 }
 @media screen and (min-width:1025px) {

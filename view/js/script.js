@@ -1,6 +1,7 @@
 let menu = document.querySelector('.menu-icon')
 let navHeader = document.querySelector('.nav-header')
 let visibilidade = false
+let inicioNav = document.querySelector('.inicio')
 
 menu.addEventListener('click', ()=>{
     if(visibilidade == false){
@@ -18,8 +19,10 @@ function verificarLargura(){
     let larguraCelular = 1025
     if(larguraAtual > larguraCelular){
         navHeader.style.display='flex'
+        inicioNav.setAttribute('class', 'inicio')
     }else if(larguraAtual < larguraCelular){
         navHeader.style.display='none'
+        inicioNav.setAttribute('class', '')
     }
 }
 window.addEventListener('resize', verificarLargura);
