@@ -1,160 +1,30 @@
-/* GERAL */
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa: #fa9897;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-rosa-escuro: #f84c58;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
 
-body {
-    background-color: var(--corPagExercicio);
+    --font-padrao: 'Raleway', Arial, sans-serif;
 }
 
-.displayflex {
-    display: flex;
-    margin-right: 10px;
+h2 {
+    font-size: 50px;
+    margin: 30px 0;
+    text-align: center;
 }
 
-/* CALCULADORA DE CALORIAS */
-
-.titulos {
-    display: flex;
-    justify-content: center;
-
-}
-
-
-/* FORMULÁRIO */
-
-.label-Resultado {
-    border-left: 70%;
-
-}
-
-.quadradoes {
-    display: flex;
-    justify-content: center;
-    
-}
-
-.objetivo {
-    display: flex;
-
-}
-
-.mostraResultado {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 15px;
-
-}
-
-.fonttituCalcCal {
-    font-weight: 500;
-    color: #5e5e5e;
-    font-size: 37px;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    background-color: white;
-    width: 40%;
-    height: 60%;
-    border-radius: 15px;
-    margin-left: 7%;
-    margin-top: 50px;
-    margin-right: 2%;
-}
-
-@media screen and (min-width:0px) {
-    .fonttituCalcCal {
-        font-weight: 500;
-        color: #5e5e5e;
-        font-size: 37px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        background-color: white;
-        width: 70%;
-        height: 50%;
-        border-radius: 15px;
-        margin-left: 7%;
-        margin-top: 50px;
-        margin-bottom: 0;
-        margin-right: 2%;
-    }
-}
-
-@media screen and (min-width:400px) {
-    .fonttituCalcCal {
-        font-weight: 500;
-        color: #5e5e5e;
-        font-size: 37px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        background-color: white;
-        width: 50%;
-        height: 80%;
-        border-radius: 15px;
-        margin-left: 7%;
-        margin-top: 50px;
-        margin-bottom: 0;
-        margin-right: 2%;
-    }
-}
-
-@media screen and (min-width:1074px) {
-    .fonttituCalcCal {
-        font-weight: 500;
-        color: #5e5e5e;
-        font-size: 37px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        background-color: white;
-        width: 40%;
-        height: 50%;
-        border-radius: 15px;
-        margin-left: 7%;
-        margin-top: 50px;
-        margin-bottom: 0;
-        margin-right: 2%;
-    }
-}
-
-@media screen and (min-width:1197px) {
-    .fonttituCalcCal {
-        font-weight: 500;
-        color: #5e5e5e;
-        font-size: 37px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        background-color: white;
-        width: 30%;
-        height: 50%;
-        border-radius: 15px;
-        margin-left: 7%;
-        margin-top: 50px;
-        margin-bottom: 0;
-        margin-right: 2%;
-    }
-}
-
-.formulario {
-    font-style: #fff;
-    border-radius: 15px;
-    background: linear-gradient(to bottom, #f84c58, #fa9897); 
-    max-width: 450px;
-    width: 700px;
-    
-    overflow: hidden;
+form {
+    max-width: 500px;
+    margin: auto;
     padding: 20px;
-    margin-left: 7%;
-    margin-top: 0;
-    margin-right: 2%;
-    margin-bottom: 20%;
-    
+    overflow: hidden;
+    background: white;
 }
 
-.formulario .titulo {
-    
-    color: #ffffff;
+form h3 {
+    color: #757575;
     font-size: 1.5em;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -163,19 +33,11 @@ body {
     color: #ffffff;
     margin-left: 100px;
 
-}
-
-.button-objetivo {
-    border-radius: 15px;
-    margin-left: 2%;
-
-}
-
 :focus {
     outline: none;
 }
 
-.label {
+.container-input {
     float: left;
     width: 100%;
     margin-bottom: 25px;
@@ -358,5 +220,4 @@ article > .quadradoes > form > .displayflex > button > h2{
 
 }
 
-
-
+}
