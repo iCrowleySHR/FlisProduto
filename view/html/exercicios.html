@@ -8,21 +8,23 @@
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/form.css">
+    <script defer src="../js/script.js"></script>
 </head>
 <body>
     <header>
         <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
-        <nav>
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
+        <nav class="nav-header">
             <ul>
                 <li><a href="#">Saúde</a></li>
                 <li><a href="#">Comunidade</a></li>
-                <li><a href="#">Assistência</a></li>
-                <li class="dropdown">
-                    <button class="dropbtn">Fitness</button>
+                <li id="menu-margem"><a href="#">Assistência</a></li>
+                <li class="dropdown dropbtn">
+                    <div class="fitnessNav">Fitness</div>
                     <div class="dropdown-content">
-                        <a href="view/calendario.html">Alimentação</a>
-                        <a href="view/calendario.html">Exercícios</a>
-                        <a href="view/calendario.html">Calendário</a>
+                        <a href="">Alimentação</a>
+                        <a href="./exercicios.html">Exercícios</a>
+                        <a href="./calendario.html">Calendário</a>
                     </div>
                 </li>
                 <li><a href="../../index.html" class="inicio">Início</a></li>
@@ -30,32 +32,85 @@
         </nav>
     </header>
     <main>
+        
         <article>
-            <section>
-                <h2>Mulheres que buscam uma vida fitness!</h2>
-                <form method="post" action="">
-                    <h3>Formulário para criar a sua rotina de exercícios personalizada!</h3>
-                    <fieldset class="container-input">
-                        <input type="text" class="input-bordas" placeholder="Peso" required>
-                        <span class="focus-border"> <i></i> </span>
-                    </fieldset>
-                    <fieldset class="container-input">
-                        <input type="text" class="input-bordas" placeholder="Altura" required>
-                        <span class="focus-border"> <i></i> </span>
-                    </fieldset>
-                    <fieldset class="container-input">
-                        <input type="text" class="input-bordas" placeholder="Assunto" required>
-                        <span class="focus-border"> <i></i> </span>
-                    </fieldset>
-                    <fieldset class="container-input">
-                        <textarea type="text" class="input-bordas textarea" rows="4" placeholder="Assunto" required=""></textarea>
-                        <span class="focus-border"> <i></i> </span>
-                    </fieldset>
-                    <button class="button-form borda-inversa">Enviar</button>
-                </form>
-            </section>
+            <div class="titulos">
+                <div class="fonttituCalcCal">
+                    Calculadora de calorias
+                </div>
+                <div class="fonttituVideo">
+                    Vídeos
+                </div>
+            </div>  
+            <br><br>
+            <div class="quadradoes">
+            <form class="formulario" method="post" action="enviaDados.php">
+            
+                <h2 class="titulo">Peso atual:</h2>
+                <label class="label">
+                    
+                    <input type="text" class="input-bordas" placeholder="Ex: 72,5 kg" required="">
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <h2 class="titulo">Objetivo:</h2>
+                <label class="label objetivo">
+                    
+                    <button class="button-form-objetivo"> Manter</button>
+                    <button class="button-form-objetivo button-objetivo"> Engordar</button>
+                    <button class="button-form-objetivo button-objetivo"> Emagrecer</button>
+                    <span class="focus-border"> <i></i> </span>
+                
+                </label>
+                <br><br><br><br>
+                <div class="displayflex">
+                    <h2 class="titulo">Idade:</h2>
+                    <h2 class="tituloAlt">Altura:</h2>
+                </div>
+                <div class="displayflexa">
+                        <label class="label">
+                            <br><br>
+                            <input type="text" class="input-bordas" placeholder="Ex: 35 anos" required="">
+                            <span class="focus-border"> <i></i> </span>
+                        
+                        </label>
+                        
+                        <label class="label">
+                            <br><br>
+                            <input type="text" class="input-bordas" placeholder="Ex: 160 cm" required="">
+                            <span class="focus-border"> <i></i> </span>
+                        
+                        </label>
+                    </div>
+                <label class="naoexibir">
+                    <span>Não preencher:</span><br>
+                    <input type="text" name="url" value=""></p>
+                </label> 
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <div class="displayflex">
+                    <button class="button-form borda-inversa"><h2>Calcular</h2></button>
+
+                    <label class="label label-Resultado">
+                        <h2 class="titulo">Resultado:</h2>
+                        <div class="mostraResultado"></div>
+                    
+                    </label>
+                    
+                </div>
+            </form>
+
+
+
+        <div class="areaVideo">
+
+
+        </div>
+        
+        </div>
+
         </article>
     </main>
+    <br><br>
     <footer>
         <p>Todos os direitos reservados a Flis ©</p>
     </footer>

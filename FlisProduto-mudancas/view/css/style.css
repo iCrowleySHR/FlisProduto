@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +14,7 @@
     --cor-nav-link: gray;
     --cor3: #fa9897;
     --cor4: #f84c58;
-    --corPagExercicio: #ededed;
-
+    --branco: white;
     --font-padrao: 'Raleway', Arial, sans-serif;
 }
 
@@ -40,7 +40,6 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 8px;
 }
 
 nav li {
@@ -81,13 +80,6 @@ nav a.inicio::after {
     display: none;
 }
 
-article> img{
-    margin: 0 auto;
-    width: 100%;
-    height: 468px;
-    border-radius: 0px 0px 25px 25px;
-}
-
 .dropbtn {
     font-size: 20px;
     border: none;
@@ -95,9 +87,7 @@ article> img{
     font-family: 'Raleway', sans-serif;
     color: var(--cor-nav-link);
     cursor: pointer;
-    padding-bottom: 5px;
 }
-
 
 .dropdown {
     position: relative;
@@ -109,11 +99,9 @@ article> img{
     position: absolute;
     background-color: var(--cor-fundo);
     border-radius: 10px;
-    top: 29px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #00000033;
     z-index: 1000;
-    
 }
 
 .dropdown-content a {
@@ -121,18 +109,15 @@ article> img{
     padding: 12px 15px;
     text-decoration: none;
     display: block;
-    
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
     cursor: pointer;
-    border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    
 }
 
 main {
@@ -154,7 +139,7 @@ article .nav-artigo {
     display: flex;
     padding: 16px;
     background: linear-gradient(to right, #f84c58, #fa9897); 
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 25px 25px 0 0;
 }
 
@@ -171,7 +156,7 @@ article.container-planos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     width: 80%;
     width: 85%;
@@ -182,15 +167,12 @@ section.plano {
     flex-direction: column;
     margin-bottom: 60px;
     padding: 13px;
-    margin-left: 5%;
-    margin-right: 5%;
     width: 310px;
     height: 480px;
     transition: 300ms ease-out;
     border-radius: 13px;
     box-shadow: 1px 1px 10px #0000001c;
     background-color: white;
-    cursor: pointer;
 }
 
 section.plano:hover {
@@ -221,102 +203,8 @@ section.plano:hover {
     background-color: var(--cor-verde-claro);
 }
 
-.menu-icon{
-    cursor: pointer;
-}
-
 footer {
     padding: 8px;
     text-align: center;
-    background-color: var(--cor-rosa-claro);
-}
-
-@media screen and (max-width:1024px) {
-    .nav-header{
-        position: absolute;
-        display: none;
-        justify-content: center;      
-    }
-    .nav-header > ul{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        margin-top: 50px;
-        background-color: white;
-        max-width: 400px;
-        border: 1px solid black;
-        border-radius: 7px;
-        height: 215px;
-        z-index: 100;
-    }
-
-    .nav-header > ul > li{
-        max-width: 450px;
-        width: 1000px;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        text-align: center;
-        margin: 0;
-    }
-    .nav-artigo{
-        z-index: 99;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 8px 20px;
-        background-color: var(--cor-rosa-claro);
-    }
-    header > img{
-        position: absolute;
-        right: 0;
-        width: 75px;
-        margin-right: 5px;
-    }
-
-    .dropdown {
-        position: relative;
-    }
-    
-    .dropdown-content {
-        display: flex;
-        position: absolute;
-        background-color: var(--cor-fundo);
-        border-radius: 10px;
-        min-width: 160px;
-        z-index: 1000;
-        top: 80px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .dropdown-content a {
-        color: var(--cor-nav-link);
-        padding: 12px 15px;
-        text-decoration: none;
-        display: flex;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: flex;
-    }
-    .fitnessNav{
-        display: none;
-    }
-    #menu-margem{
-       margin-bottom: -13px;
-    }
-}
-@media screen and (min-width:1025px) {
-    header > img{
-        display: none;
-    }
-    .nav-header{
-        display: flex;
-    }
+    background-color: gray;
 }
