@@ -1,45 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root {
-    --cor-fundo: #fff7f7;
-    --cor-rosa: #fa9897;
-    --cor-rosa-claro: #ffc8c4;
-    --cor-rosa-escuro: #f84c58;
-    --cor-verde-claro: #90EE90;
-    --cor-nav-link: gray;
+/* GERAL */
 
-    --font-padrao: 'Raleway', Arial, sans-serif;
+body {
+    background-color: var(--corPagExercicio);
 }
 
-h2 {
-    font-size: 50px;
-    margin: 30px 0;
-    text-align: center;
+.displayflex {
+    display: flex;
+    margin-right: 10px;
 }
 
-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
+/* CALCULADORA DE CALORIAS */
+
+.titulos {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* FORMULÁRIO */
+
+.label-Resultado {
+    border-left: 70%;
+
+}
+
+.quadradoes {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.objetivo {
+    display: flex;
+
+}
+
+.mostraResultado {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.fonttituCalcCal {
+    font-weight: 500;
+    color: #5e5e5e;
+    font-size: 37px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    border-radius: 15px;
+    margin-left: 7%;
+    margin-top: 50px;
+    margin-right: 2%;
+}
+
+@media screen and (min-width:0px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 70%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 50%;
+        height: 80%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1074px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 40%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1197px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 30%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+.formulario {
+    font-style: #fff;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #f84c58, #fa9897); 
+    max-width: 450px;
+    width: 700px;
+    
     overflow: hidden;
-    background: white;
+    padding: 20px;
+    margin-left: 7%;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 20%;
+    
 }
 
-body::-webkit-scrollbar {
-    width: 10px;            
-}
-  
-body::-webkit-scrollbar-track {
-    background: gray;       
-}
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #212121;    
-    border-radius: 20px;       
-    border: 1px solid gray; 
-}
-
-form h3 {
-    color: #757575;
+.formulario .titulo {
+    
+    color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -48,11 +163,19 @@ form h3 {
     color: #ffffff;
     margin-left: 100px;
 
+}
+
+.button-objetivo {
+    border-radius: 15px;
+    margin-left: 2%;
+
+}
+
 :focus {
     outline: none;
 }
 
-.container-input {
+.label {
     float: left;
     width: 100%;
     margin-bottom: 25px;
@@ -235,4 +358,5 @@ article > .quadradoes > form > .displayflex > button > h2{
 
 }
 
-}
+
+
