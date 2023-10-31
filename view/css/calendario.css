@@ -32,6 +32,7 @@ iframe{
     flex-direction: column;
     margin-bottom: 46px;
     box-shadow: 1px 1px 10px #0000001e; 
+    color: #852027;
  
 }
 
@@ -75,7 +76,7 @@ button{
 }
 .lembrete-criado{
     margin-bottom: 10px;
-    background-color: #195274;
+    background-color: rgba(214, 212, 212, 0.534);
     overflow: auto;
     height: 85%;
     width: 95%;
@@ -126,5 +127,17 @@ body::-webkit-scrollbar-thumb {
         margin-right: 9%;
         margin: 25px auto;
     }
+
+}
+
+.button-lembrete {
+  cursor: pointer;
+  transition: 300ms;
+  padding: 13px;
+
+}
+.button-lembrete:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.411) 5px 5px;
 
 }
