@@ -3,6 +3,7 @@ let navHeader = document.querySelector('.nav-header')
 let visibilidade = false
 let inicioNav = document.querySelector('.inicio')
 
+
 menu.addEventListener('click', ()=>{
     if(visibilidade == false){
         visibilidade = true
@@ -27,3 +28,25 @@ function verificarLargura(){
 }
 window.addEventListener('resize', verificarLargura);
 verificarLargura();
+
+/* video */
+let main = document.querySelector('main')
+let videoClick = document.querySelector('.img-video')
+let linkURL = document.querySelector('.boxProduto')
+let iframe = document.querySelector('iframe')
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let main = document.querySelector('main');
+    let iframes = document.querySelectorAll('iframe');
+
+    document.addEventListener('click', function(event) {
+        if (event.target.classList.contains('img-video')) {
+            main.style.opacity = '0.8';
+            iframes[0].style.display = 'block'; // Ajuste conforme necessário se houver vários iframes
+
+            let iframeLink = event.target.closest('.boxProduto').getAttribute('data-src');
+            iframes[0].setAttribute('src', iframeLink); // Ajuste conforme necessário se houver vários iframes
+        }
+    });
+});
