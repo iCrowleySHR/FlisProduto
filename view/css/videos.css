@@ -56,12 +56,15 @@ body{
     margin: 0 auto;
     width: 100%;
     border-radius: 13px;
-    transition: 300ms linear;
+    transition: 100ms linear;
+}
+.img-video{
+    box-shadow: 5px 5px black;
+    border: black solid 1px;
 }
 .boxProduto{
     display: flex;
     width: 100%;
-    border-radius: 7px;
 }
 .boxProduto > a{
     color: var(--cor-nav-link);
@@ -96,12 +99,30 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     left: 0; 
     top: 20%;
+    
 }
 iframe{
     display: none;
+    flex-wrap: wrap;
     animation: iframeAnimation 2s ease-in-out;
     border-radius: 13px;
     box-shadow: 2px 2px black;
+    max-width: 1120px;
+    width: 100%;
+    height: 620px;   
+}
+.btn-sair{
+    position: absolute;
+    display: none;
+    top: 15%;
+    width: 25px;
+    height: 25px;
+    right: 25px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.btn-sair:hover{
+    transform: scale(1.5);
 }
 @keyframes iframeAnimation {
     0%{
@@ -118,5 +139,8 @@ iframe{
         margin: 0 auto;
         width: 100%;
         border-radius: 13px;
+    }
+    iframe{
+        height: 350px;
     }
 }
