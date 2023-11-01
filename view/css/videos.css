@@ -99,7 +99,11 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     left: 0; 
     top: 20%;
-    
+}
+.img-video{
+    max-width: 360px;
+    width: 100%;
+    height: 202px;
 }
 iframe{
     display: none;
@@ -138,6 +142,7 @@ iframe{
         max-width: 250px;
         margin: 0 auto;
         width: 100%;
+        height: auto;
         border-radius: 13px;
     }
     iframe{

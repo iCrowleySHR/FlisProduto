@@ -236,6 +236,14 @@ section.plano:hover {
     cursor: pointer;
 }
 
+.img-carrosel{
+   display: flex;
+   border: solid red 3px;
+   max-width: 100%;
+}
+
+
+
 footer {
     padding: 8px;
     text-align: center;
