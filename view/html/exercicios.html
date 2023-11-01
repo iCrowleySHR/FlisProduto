@@ -18,13 +18,13 @@
             <ul>
                 <li><a href="#">Saúde</a></li>
                 <li><a href="#">Comunidade</a></li>
-                <li id="menu-margem"><a href="#">Assistência</a></li>
+                <li id="menu-margem"><a href="videos.html">Educacional</a></li>
                 <li class="dropdown dropbtn">
                     <div class="fitnessNav">Fitness</div>
                     <div class="dropdown-content">
                         <a href="">Alimentação</a>
-                        <a href="./exercicios.html">Exercícios</a>
-                        <a href="./calendario.html">Calendário</a>
+                        <a href="exercicios.html">Exercícios</a>
+                        <a href="calendario.html">Calendário</a>
                     </div>
                 </li>
                 <li><a href="../../index.html" class="inicio">Início</a></li>
@@ -34,16 +34,16 @@
     <main>
         
         <article>
-            <div class="titulos">
+            <section class="titulos">
                 <div class="fonttituCalcCal">
                     Calculadora de calorias
                 </div>
                 <div class="fonttituVideo">
                     Vídeos
                 </div>
-            </div>  
+            </section>  
             <br><br>
-            <div class="quadradoes">
+            <section class="quadradoes">
             <form class="formulario" method="post" action="enviaDados.php">
             
                 <h2 class="titulo">Peso atual:</h2>
@@ -67,7 +67,7 @@
                     <h2 class="titulo">Idade:</h2>
                     <h2 class="tituloAlt">Altura:</h2>
                 </div>
-                <div class="displayflexa">
+                <div class="displayflex">
                         <label class="label">
                             <br><br>
                             <input type="text" class="input-bordas" placeholder="Ex: 35 anos" required="">
@@ -82,32 +82,14 @@
                         
                         </label>
                     </div>
-                <label class="naoexibir">
-                    <span>Não preencher:</span><br>
-                    <input type="text" name="url" value=""></p>
-                </label> 
-                <br><br><br><br><br><br><br><br><br><br><br>
-                <div class="displayflex">
-                    <button class="button-form borda-inversa"><h2>Calcular</h2></button>
-
-                    <label class="label label-Resultado">
-                        <h2 class="titulo">Resultado:</h2>
-                        <div class="mostraResultado"></div>
-                    
-                    </label>
-                    
+                <div class="container-enviar">
+                    <h2 class="titulo">Resultado:</h2>
+                    <button class="button-form borda-inversa">Calcular</button>
+                        <!-- <div class="mostraResultado"></div> -->
                 </div>
             </form>
-
-
-
-        <div class="areaVideo">
-
-
-        </div>
-        
-        </div>
-
+            <div class="areaVideo"></div>
+            </section>
         </article>
     </main>
     <br><br>

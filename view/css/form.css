@@ -10,49 +10,190 @@
     --font-padrao: 'Raleway', Arial, sans-serif;
 }
 
-h2 {
-    font-size: 50px;
-    margin: 30px 0;
-    text-align: center;
+/* GERAL */
+
+body {
+    background-color: var(--corPagExercicio);
 }
 
-form {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
+.displayflex {
+    display: flex;
+    gap: 10px;
+}
+
+/* CALCULADORA DE CALORIAS */
+
+.titulos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* FORMULÁRIO */
+
+.label-Resultado {
+   
+
+}
+
+.quadradoes {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-enviar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.objetivo {
+    display: flex;
+
+}
+
+.mostraResultado {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.fonttituCalcCal {
+    font-weight: 500;
+    color: #5e5e5e;
+    padding: 10px 25px;
+    font-size: 37px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    width: 43%;
+    height: 60%;
+    border-radius: 15px;
+    margin-left: 7%;
+    margin-top: 50px;
+    margin-right: 2%;
+}
+
+@media screen and (min-width:0px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 70%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 50%;
+        height: 80%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1074px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 40%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (min-width:1197px) {
+    .fonttituCalcCal {
+        font-weight: 500;
+        color: #5e5e5e;
+        font-size: 37px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        background-color: white;
+        width: 30%;
+        height: 50%;
+        border-radius: 15px;
+        margin-left: 7%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        margin-right: 2%;
+    }
+}
+
+.formulario {
+    font-style: #fff;
+    border-radius: 15px;
+    background: linear-gradient(to right, #f84c58, #fa9897); 
+    max-width: 450px;
+    width: 700px;
+    
     overflow: hidden;
-    background: white;
+    padding: 20px;
+    margin-left: 7%;
+    margin-top: 0;
+    margin-right: 2%;
+    margin-bottom: 20%;
+    
 }
 
-body::-webkit-scrollbar {
-    width: 10px;            
-}
-  
-body::-webkit-scrollbar-track {
-    background: gray;       
-}
-  
-body::-webkit-scrollbar-thumb {
-    background-color: #212121;    
-    border-radius: 20px;       
-    border: 1px solid gray; 
-}
-
-form h3 {
-    color: #757575;
+.formulario .titulo {
+    
+    color: #ffffff;
     font-size: 1.5em;
-    margin-bottom: 10px;
     padding-bottom: 10px;
 }
 .tituloAlt {
     color: #ffffff;
     margin-left: 100px;
 
+}
+
+.button-objetivo {
+    border-radius: 15px;
+    margin-left: 2%;
+
+}
+
 :focus {
     outline: none;
 }
 
-.container-input {
+.label {
     float: left;
     width: 100%;
     margin-bottom: 25px;
@@ -141,14 +282,12 @@ form h3 {
 
 .button-form {
     background-color: #00bf62;
-    padding: 0.5em 1.3em;
     color: #fff;
+    padding: 10px 20px;
     font-size: 1.2em;
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    width: 100px;
-    height: 50px;
     
     
 }
@@ -211,7 +350,7 @@ article > .quadradoes > form > .displayflex > button > h2{
     align-items: center; 
     justify-content: center;
     background: linear-gradient(to right, #f84c58, #fa9897);
-    width: 900px;
+    width: 57%;
     height: 70px;
     border-radius: 15px;
     margin-left: 50px;
@@ -225,14 +364,10 @@ article > .quadradoes > form > .displayflex > button > h2{
 
 .areaVideo {
     width: 900px;
-    height: 700px;
+    height: 510px;
     background-color: white;
     margin-left: 2%;
     margin-right: 7%;
     margin-bottom: 10%;
     border-radius: 15px;
-
-
-}
-
 }

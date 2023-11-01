@@ -185,10 +185,9 @@ article.container-planos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
     width: 80%;
-    width: 85%;
 }
 
 section.plano {
@@ -196,8 +195,6 @@ section.plano {
     flex-direction: column;
     margin-bottom: 60px;
     padding: 13px;
-    margin-left: 5%;
-    margin-right: 5%;
     width: 310px;
     height: 480px;
     transition: 300ms ease-out;
