@@ -236,12 +236,11 @@ section.plano:hover {
     cursor: pointer;
 }
 
-.img-carrosel{
-   display: flex;
-   border: solid red 3px;
-   max-width: 100%;
+.video-gif{
+    max-width: 1920px;
+    width: 100%;
+    margin-bottom: 50px;
 }
-
 
 
 footer {
