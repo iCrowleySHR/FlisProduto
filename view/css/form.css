@@ -156,7 +156,6 @@ body {
     
     color: #ffffff;
     font-size: 1.5em;
-    margin-bottom: 10px;
     padding-bottom: 10px;
 }
 .tituloAlt {
@@ -264,14 +263,12 @@ body {
 
 .button-form {
     background-color: #00bf62;
-    padding: 0.5em 1.3em;
     color: #fff;
+    padding: 10px 20px;
     font-size: 1.2em;
     border: none;
     cursor: pointer;
     border-radius: 15px;
-    width: 100px;
-    height: 50px;
     
     
 }
@@ -334,7 +331,7 @@ article > .quadradoes > form > .displayflex > button > h2{
     align-items: center; 
     justify-content: center;
     background: linear-gradient(to right, #f84c58, #fa9897);
-    width: 900px;
+    width: 57%;
     height: 70px;
     border-radius: 15px;
     margin-left: 50px;
@@ -348,7 +345,7 @@ article > .quadradoes > form > .displayflex > button > h2{
 
 .areaVideo {
     width: 900px;
-    height: 700px;
+    height: 510px;
     background-color: white;
     margin-left: 2%;
     margin-right: 7%;

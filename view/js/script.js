@@ -39,14 +39,39 @@ let iframe = document.querySelector('iframe')
 document.addEventListener('DOMContentLoaded', function () {
     let main = document.querySelector('main');
     let iframes = document.querySelectorAll('iframe');
+    let btnSair = document.querySelector('.btn-sair')
 
     document.addEventListener('click', function(event) {
         if (event.target.classList.contains('img-video')) {
-            main.style.opacity = '0.8';
-            iframes[0].style.display = 'block'; // Ajuste conforme necessário se houver vários iframes
-
+            main.style.opacity = '0.2';
+            iframes[0].style.display = 'flex'; // Ajuste conforme necessário se houver vários iframes
+            btnSair.style.display='flex'
             let iframeLink = event.target.closest('.boxProduto').getAttribute('data-src');
             iframes[0].setAttribute('src', iframeLink); // Ajuste conforme necessário se houver vários iframes
+
+            function Sair(){
+                btnSair.style.display='none'
+                main.style.opacity = '1';
+                iframes[0].style.display = 'none';
+                iframes[0].setAttribute('src', '');
+            }
+
+            btnSair.addEventListener('click',Sair)
         }
     });
 });
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
