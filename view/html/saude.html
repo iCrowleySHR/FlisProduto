@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flis | Exercícios</title>
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Flis | Saúde</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">    
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/calendario.css">
+    <link rel="stylesheet" href="../css/saude.css">
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/saude.js"></script>
 </head>
 <body>
     <header>
@@ -32,28 +33,21 @@
         </nav>
     </header>
     <main>
-        <section>
-
-            <div class="lembrete"> 
-                <h2>Lembretes</h2> 
-                <div class="lembretes">
-                    <div class="lembrete-criado">
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                        <div class="criados"></div>
-                    </div>
-                    <button class="button-lembrete">Criar lembrete</button>
+        <article>
+            <section class="container-saude">
+                <h2 class="titulo-saude">Diário da saúde</h2>
+                <h2 class="titulo-resultado">Resultado</h2>
+                <div class="container-sintomas">
+                    <h3>Descreva aqui seus sintomas:</h3>
+                    <textarea id="text-sintomas" rows="15" placeholder=""></textarea>
+                    <button class="borda-inversa" id="btn-analizar">Analizar</button>
                 </div>
-            </div> 
-            
-            <iframe src="../iframe/iframe.html" id="iframe"></iframe>
-        </section>
-        
+                <div class="container-resultado">
+                    <h3>Resultado analizado por IA:</h3>
+                    <p id="text-resultado"></p>
+                </div>
+            </section>
+        </article>
     </main>
     <footer>
         <p>Todos os direitos reservados a Flis ©</p>

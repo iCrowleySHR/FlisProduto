@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* GERAL */
 
 body {
@@ -6,14 +7,14 @@ body {
 
 .displayflex {
     display: flex;
-    margin-right: 10px;
+    gap: 10px;
 }
 
 /* CALCULADORA DE CALORIAS */
 
 .titulos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -21,7 +22,7 @@ body {
 /* FORMULÁRIO */
 
 .label-Resultado {
-    border-left: 70%;
+   
 
 }
 
@@ -29,6 +30,12 @@ body {
     display: flex;
     justify-content: center;
     
+}
+
+.container-enviar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .objetivo {
@@ -47,12 +54,13 @@ body {
 .fonttituCalcCal {
     font-weight: 500;
     color: #5e5e5e;
+    padding: 10px 25px;
     font-size: 37px;
     display: flex;
     align-items: center; 
     justify-content: center;
     background-color: white;
-    width: 40%;
+    width: 43%;
     height: 60%;
     border-radius: 15px;
     margin-left: 7%;
@@ -351,9 +359,4 @@ article > .quadradoes > form > .displayflex > button > h2{
     margin-right: 7%;
     margin-bottom: 10%;
     border-radius: 15px;
-
-
 }
-
-
-

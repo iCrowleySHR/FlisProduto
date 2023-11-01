@@ -1,43 +1,5 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body {
     background-color: #fff7f7;
-
-}
-
-header {
-    background-color: #d9404d;
-    color: white;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffc8c4;
-    color: gray;
-    height: 100px;
-    position: sticky;
-}
-
-.img-logo-header{
-    width: 120px;
-    height: 120px;
-    margin-left: 25px;
-    margin-top: -12px;
-}
-ul{
-    display: flex;
-    list-style: none;
-    margin: 25px;
-    margin-top: 35px;
-    font-size: 20px;
-}
-
-li{
-    margin-left: 15px;
-    margin-right: 15px;
-
 }
 
 .dropbtn{
@@ -78,8 +40,6 @@ li{
 main {
     background-color: white;
 }
-
-
 
 
 .container1 {
