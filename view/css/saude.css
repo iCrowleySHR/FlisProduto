@@ -149,6 +149,6 @@ section .container-sintomas, section .container-resultado {
 
 @media (max-width:700px) {
     .container-saude {
-        margin: 10px;
+        margin: 60px 10px;
     }
 }
