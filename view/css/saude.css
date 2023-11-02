@@ -61,6 +61,7 @@ section div {
 .container-sintomas textarea {
     margin: 10px 0;
     font-size: 18px;
+    resize: none;
 }
 
 .container-sintomas textarea:focus {
