@@ -21,13 +21,13 @@ body {
     gap: 40px;
 }
 
-.container-saude h2, .container-saude div {
+.container-saude h2, .container-saude div > div {
     box-shadow: 1px 1px 10px #0000000a; 
 }
 
 h2 {
     padding: 6px 22px;
-    font: 500 50px var(--font-padrao);
+    font: 500 45px var(--font-padrao);
     text-shadow: 1px 1px 5px #0000000e;
     text-align: center;
     border-radius: 17px;
@@ -43,14 +43,19 @@ h2 {
     background: linear-gradient(to right, var(--cor4), var(--cor3));
 }
 
-section div {
+section .container-sintomas, section .container-resultado {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     padding: 20px;
     color: gray;
     font: normal 20px var(--font-padrao);
     background-color: white;
     border-radius: 17px;
+}
+
+section .container-sintomas, section .container-resultado {
+    height: 400px;
 }
 
 .container-sintomas {
@@ -80,6 +85,24 @@ section div {
     border-radius: 15px;
 }
 
+.text-barrinha {
+    animation: pisca-pisca 1s linear infinite;
+}
+
+@keyframes pisca-pisca {
+    0%, 100% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+}
+
+.container-resultado { 
+    border: 8px solid white;
+}
+
 .borda-inversa {
     display: inline-block;
     vertical-align: middle;
@@ -106,3 +129,26 @@ section div {
     word-break: break-word;
 }
 
+@media (max-width:1000px) {
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 { 
+        font-size: 20px;
+    }
+
+    .container-coluna {
+        margin-bottom: 60px;
+    }
+
+    .container-saude {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width:700px) {
+    .container-saude {
+        margin: 10px;
+    }
+}
