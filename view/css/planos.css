@@ -78,21 +78,113 @@ main{
     margin-left: 5px;
     margin-right: 35px;
 }
-.banner-app{
+
+.container-planos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.planos{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 430px;
+    -webkit-box-shadow: 5px 5px 10px 7px #887777; 
+    box-shadow: 5px 5px 10px 7px #887777;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
-.banner-app > img{
+.title{
     margin-top: 25px;
-    width: 50%;
-    border-radius: 13px;
-    border: 1px black solid;
+    font-weight: 800;
+}
+.underline{
+    margin-left: -25px;
+    color: gray;
+    text-decoration: line-through;
+}
+.planos > ul{
+    margin-top: 10px;
+    margin-left: -110px;
+    margin-bottom: 10px;
+}
+.planos ul li{
+    margin: 10px;
+}
+.certo-lista{
+    
+    background-image: url(../img/li.png);
+    list-style: none;
+    background-repeat: no-repeat;
+	background-position: left ;
+	background-size: 25px;
+    padding: 0px 0px 0px 25px;
+}
+.underline-lista{
+    color: gray;
+    text-decoration: line-through;
+}
+.margem-lista{
+    margin-left: -25px;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #e011b4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 80%;
+    transition: all 800ms;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover{
+    box-shadow: black 7px 7px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 article > h2{
     margin-left: 24px;
-
     margin-bottom: -15px;
+}
+.img-completo{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-left: 270px;
+    display: flex;
+    transform: rotate(10deg);
 }
 
 @media screen and (max-width:1025px) {
