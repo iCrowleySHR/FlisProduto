@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../slick/fonts/Bugaki\ Oblique.ttf') format('truetype');
+  }
+
+.fundo-plano{
+    background: linear-gradient(to right, #F54B58, #FFC8C4); 
+    width: 950px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 125px;
+}
+
+main > .fundo-plano {
+box-shadow: 10px 10px 10px #00000071;
+display: flex;
+}
+
+main > .fundo-plano > h2 {
+    margin-left: 35px;    
+    margin-top: 15px;
+    color: white;  
+    font-family: 'Open Sans';
+    text-shadow: 6px 1px 20px #000000;
+    font-size: 50px;
+}
+
