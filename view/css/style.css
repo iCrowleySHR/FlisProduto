@@ -281,6 +281,9 @@ p > a{
     text-align: center;
 }
 a img:hover{
+    transition: 200ms linear;
+}
+a img:hover{
     transform: scale(1.1);
 }
 
