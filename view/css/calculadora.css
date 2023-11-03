@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* GERAL */
+
+:root {
+    --cor-fundo: #fff7f7;
+    --cor-rosa-claro: #ffc8c4;
+    --cor-verde-claro: #90EE90;
+    --cor-nav-link: gray;
+    --cor3: #fa9897;
+    --cor4: #f84c58;
+    --corPagExercicio: #ededed;
+
+    --font-padrao: 'Raleway', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--corPagExercicio);
+}
+
+.container-calc-video {
+    margin: 80px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 70px;
+}
+/* CALCULADORA DE CALORIAS */
+
+
+
+.container-coluna {
+    margin-bottom: 60px;
+}
+
+h2 {
+    padding: 6px 22px;
+    font: 470 35px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: center;
+    border-radius: 17px;
+}
+
+.titulo-caloria {
+    color: #636363;
+    background-color: white;
+}
+
+.titulo-video {
+    color: white;
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+}
+
+section .container-form-calc, section .container-area-video {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    font: normal 20px var(--font-padrao);
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container-form-calc {
+    background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+    height: 550px;
+
+}
+.container-area-video {
+    background-color: white;
+    height: 550px;}
+
+/* FORMULÁRIO */
+
+
+/* TEXTO "VÍDEOS */
+
+
+/* ÁREA VÍDEOS */

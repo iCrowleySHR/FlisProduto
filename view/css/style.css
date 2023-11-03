@@ -23,6 +23,7 @@ body {
     background-color: var(--cor-fundo);
 }
 
+
 body::-webkit-scrollbar {
     width: 10px;           
 }
@@ -298,6 +299,11 @@ a img:hover{
     flex-direction: column;
     margin-bottom: 20px;
 }
+
+.canal:hover {
+    cursor: pointer;
+    
+}
 .canal{
     display: flex;
     max-width: 300px;
@@ -306,7 +312,7 @@ a img:hover{
     height: 75px;
     border-radius: 50px;
     margin-bottom: 25px;
-    
+    margin-top: 8px;
 }
 .canal > img{
     width: 75px;
@@ -314,6 +320,7 @@ a img:hover{
     border-radius: 100%;
 }
 .canal-recomendado{
+    
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
