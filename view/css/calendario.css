@@ -30,6 +30,7 @@ iframe{
 .lembrete{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 46px;
     box-shadow: 1px 1px 10px #0000001e; 
     color: #852027;
@@ -41,7 +42,8 @@ iframe{
     border-radius: 20px;  
     font-size: 33px;
     text-align: center;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
     height: 60px;
     display: flex; 
     justify-content: center;
@@ -140,4 +142,29 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.03);
   box-shadow: rgba(0, 0, 0, 0.411) 5px 5px;
 
+}
+
+.inserir-info {
+    border: 3px solid black;
+    border-radius: 13px;
+    width: 450px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(199, 199, 199);
+    position: absolute;
+    left: 50%; /* Centralize horizontalmente */
+    top: 50%; /* Centralize verticalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centralizar completamente */
+}
+
+.inserir-info > input{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 90%;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    outline: none;
+    border: solid black 1px;
 }

@@ -291,7 +291,51 @@ a img:hover{
 .container-videos > a{
     text-decoration: none;
 }
-
+.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre >h2{
+    font-weight: 800;
+}
+.sobre > article{
+    font-weight: 600;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+.sobre > img{
+    max-width: 750px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px;
+    border: solid 1px black;
+    box-shadow: 3px 3px black;
+}
+.motivos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.motivos > article{
+    display: flex;  
+    text-align: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+.motivos > article > h3{
+    margin: 10px;
+}
+.motivos > article > img{
+    max-width: 75px;
+    height: 75px;
+}
 .titulos{
     display: flex;
     align-items: center;
@@ -432,6 +476,16 @@ footer {
     }
     .canal-recomendado{
         margin-top: 25px;
+    }
+    .motivos{
+        flex-wrap: wrap;
+    }
+    .sobre > article{
+        font-weight: 600;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
     }
 }
 @media screen and (min-width:1025px) {
