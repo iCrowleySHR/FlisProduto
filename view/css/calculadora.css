@@ -20,7 +20,7 @@ body {
 .container-calc-video {
     margin: 80px;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     gap: 70px;
 }
 /* CALCULADORA DE CALORIAS */
@@ -39,6 +39,15 @@ h2 {
     border-radius: 17px;
 }
 
+h3 {
+    padding: 6px 20px;
+    font: 30px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: justify;
+    color: white;
+
+}
+
 .titulo-caloria {
     color: #636363;
     background-color: white;
@@ -53,7 +62,7 @@ section .container-form-calc, section .container-area-video {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font: normal 20px var(--font-padrao);
     background-color: white;
@@ -62,17 +71,237 @@ section .container-form-calc, section .container-area-video {
 
 .container-form-calc {
     background: linear-gradient(to bottom, var(--cor4), var(--cor3));
-    height: 550px;
-
+    height: 80%;
+    
 }
 .container-area-video {
     background-color: white;
-    height: 550px;}
+    height: 80%;
+}
 
-/* FORMULÁRIO */
+.input {
+    background-color: white;
+    height: 60px;
+    border-radius: 20px;
+    font: lighter 20px var(--font-padrao);
+    color: rgba(128, 128, 128, 0.61);
+
+}
+
+.container-objetivo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+}
+
+.button-manter {
+    margin-left: 0;
+    background-color: white;
+    color: rgba(65, 63, 63, 0.959);
+    font: lighter 100% var(--font-padrao);
+    border-radius: 13px;
+    padding: 2%;
+    width: 40%;
+    transition: 900ms;
+}
+
+.button-objetivo {
+    background-color: white;
+    color: rgba(65, 63, 63, 0.959);
+    font: lighter 100% var(--font-padrao);
+    border-radius: 13px;
+    padding: 3%;
+    width: 40%;
+    transition: 900ms;
+    margin-left: 8%;
+}
+
+.button-objetivo:hover, .button-manter:hover {
+    cursor: pointer;
+    
+}
+
+.container-idade-altura {
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.idade {
+    margin-right: 5%;
+}
+
+.altura {
+    margin-right: 1%;
+}
 
 
-/* TEXTO "VÍDEOS */
+.input-alt-ida {
+    width: 95%;
+    background-color: white;
+    height: 60px;
+    border-radius: 20px;
+    font: lighter 20px var(--font-padrao);
+    color: rgba(128, 128, 128, 0.61);
+
+}
+
+.container-botaoCalc-Result {
+    margin-top: 10px;
+    margin-left: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.area-btn-calc {
+    margin-top: 20px;
+}
+
+.borda-inversa {
+    padding: 15px;
+    margin-top: 10px;
+    font: lighter 30px var(--font-padrao);
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+    max-width: 80%;
+    background-color: #00bf62;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0); 
+}
+
+.borda-inversa:hover, .borda-inversa:focus, .borda-inversa:active {
+    background: none;
+    color: #00bf62;
+}
+
+.mostraresultado {
+    background-color: white;
+    padding: 15%;
+    border-radius: 15px;
+    transition: 900ms;
+
+}
 
 
-/* ÁREA VÍDEOS */
+/* @MEDIA */
+@media (max-width:1000px) {
+
+    .mostraresultado {
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        margin-left: 2%;
+    
+    }
+
+    .borda-inversa {
+        padding: 15px;
+        margin-top: 10px;
+        font: lighter 30px var(--font-padrao);
+        border-radius: 15px;
+        color: white;
+        width: 100%;
+        max-width: 200px;
+        background-color: #00bf62;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-property: background;
+        transition-property: background;
+        box-shadow: inset 0 0 0 2px #00bf62, 0 0 1px rgba(0, 0, 0, 0); 
+    }
+    
+
+    h2 {
+        font: lighter 35px var(--font-padrao);
+    }
+
+    h3 { 
+        font: normal 95% var(--font-padrao);
+
+    }
+
+    section .container-form-calc, section .container-area-video {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font: normal 20px var(--font-padrao);
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .container-coluna {
+        margin-bottom: 100px;
+    }
+
+    .container-calc-video {
+        grid-template-columns: auto;
+        margin: 100px 35px;
+    }
+
+    .container-form-calc {
+        background: linear-gradient(to bottom, var(--cor4), var(--cor3));
+        height: 80%;
+        
+    }
+    .container-area-video {
+        background-color: white;
+        height: 90%;
+    }
+
+    .input {
+        background-color: white;
+        height: 40px;
+        border-radius: 20px;
+        font: lighter 18px var(--font-padrao);
+        color: rgba(128, 128, 128, 0.61);
+        transition: 900ms;
+        
+    }
+    .button-manter {
+        margin-left: 0;
+        background-color: white;
+        color: rgba(65, 63, 63, 0.959);
+        font: lighter 90% var(--font-padrao);
+        border-radius: 13px;
+        padding: 2%;
+        width: 20%;
+        transition: 900ms;
+    }
+    
+    .button-objetivo {
+        background-color: white;
+        color: rgba(65, 63, 63, 0.959);
+        font: normal 90% var(--font-padrao);
+        border-radius: 13px;
+        padding: 2%;
+        width: 50%;
+        transition: 900ms;
+        margin-left: 8%;
+    }
+    
+}

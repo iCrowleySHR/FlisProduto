@@ -37,8 +37,39 @@
                 <div class="container-coluna">
                     <h2 class="titulo-caloria">Calculadora de calorias</h2>
                     <div class="container-form-calc">
+                        <h3>Peso atual:</h3>
+                        <input id="peso" class="input" placeholder="  Ex: 72,5">
+                            <h3>Objetivo:</h3>
+                        <div class="container-objetivo">    
+                            <button class="button-manter">Manter</button>
+                            <button class="button-objetivo">Engordar</button>
+                            <button class="button-objetivo">Emagrecer</button>
+                        </div>
+                        <div class="container-idade-altura">
+                            <div class="idade">
+                                <h3>Idade:</h3>
+                                <input id="idade" class="input-alt-ida" placeholder="  Ex: 35 anos">
 
+                            </div>
 
+                            <div class="altura">
+                                <h3>Altura:</h3>
+                                <input id="altura" class="input-alt-ida" placeholder="  Ex: 160 cm">
+
+                            </div>
+                        </div>
+                        <div class="container-botaoCalc-Result">
+                            <div class="area-btn-calc">
+                                <button class="borda-inversa" id="btn-calccalor" onclick="calcularcalo">Calcular</button>
+
+                            </div>
+
+                            <div class="resultado">
+                                <h3>Resultado:</h3>
+                                <p class="mostraresultado"></p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="container-coluna">
@@ -51,31 +82,11 @@
             </section>
         </article>
     </main>
-<!-- COISO DO SACHETTO -->
-    <main>
-        <article>
-            <section class="container-saude">
-                <div class="container-coluna">
-                    <h2 class="titulo-saude">Diário da saúde</h2>
-                    <div class="container-sintomas">
-                        <h3>Descreva aqui seus sintomas:</h3>
-                        <textarea id="text-sintomas" rows="15" placeholder=""></textarea>
-                        <button class="borda-inversa" id="btn-analizar">Analisar</button>
-                    </div>
-                </div>
-                <div class="container-coluna">
-                    <h2 class="titulo-resultado">Resultado</h2>
-                    <div class="container-resultado">
-                        <h3>Resultado analisado por IA:</h3>
-                        <p><span id="text-resultado"></span><span class="text-barrinha">|</span></p>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
+
     <br><br>
     <footer>
         <p>Todos os direitos reservados a Flis ©</p>
     </footer>
+    <script type="text/javascript" src="../js/calculadora.js"></script>
 </body>
 </html>
