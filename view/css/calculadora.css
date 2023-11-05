@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* GERAL */
 
 :root {
     --cor-fundo: #fff7f7;
@@ -9,7 +8,6 @@
     --cor3: #fa9897;
     --cor4: #f84c58;
     --corPagExercicio: #ededed;
-
     --font-padrao: 'Raleway', Arial, sans-serif;
 }
 
@@ -23,9 +21,6 @@ body {
     grid-template-columns: 45% 55%;
     gap: 70px;
 }
-/* CALCULADORA DE CALORIAS */
-
-
 
 .container-coluna {
     margin-bottom: 60px;
@@ -34,6 +29,14 @@ body {
 h2 {
     padding: 6px 22px;
     font: 470 35px var(--font-padrao);
+    text-shadow: 1px 1px 5px #0000000e;
+    text-align: center;
+    border-radius: 17px;
+}
+
+h3 {
+    padding: 6px 22px;
+    font: 30px var(--font-padrao);
     text-shadow: 1px 1px 5px #0000000e;
     text-align: center;
     border-radius: 17px;
@@ -65,14 +68,55 @@ section .container-form-calc, section .container-area-video {
     height: 550px;
 
 }
+
 .container-area-video {
     background-color: white;
-    height: 550px;}
+    height: 550px;
+}
 
-/* FORMULÁRIO */
+input {
+    background-color: white;
+    height: 60px;
+    border-radius: 20px;
+    font: lighter 20px var(--font-padrao);
+    color: rgb(128, 128, 128, 0.61);
+}
 
+.container-objetivo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
-/* TEXTO "VÍDEOS */
+.button-objetivo {
+    background-color: white;
+    color: rgb(65, 63, 63, 0.959);
+    font: lighter 23px var(--font-padrao);
+    border-radius: 13px;
+    width: 130px;
+    height: 50px;
+    transition: 900ms;
+    margin-left: 5px;
+}
 
+.button-objetivo:hover {
+    cursor: pointer;
+}
 
-/* ÁREA VÍDEOS */
+@media (max-width: 1000px){
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    .container-coluna{
+        margin-bottom: 100px;
+    }
+
+    .container-calc-video{
+        grid-template-columns: auto;
+        margin: 100px 35px;
+    }
+}

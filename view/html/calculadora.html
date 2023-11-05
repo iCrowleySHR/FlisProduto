@@ -23,7 +23,7 @@
                     <div class="fitnessNav">Fitness</div>
                     <div class="dropdown-content">
                         <a href="">Alimentação</a>
-                        <a href="exercicios.html">Exercícios</a>
+                        <a href="calculadora.html">Calculadora</a>
                         <a href="calendario.html">Calendário</a>
                     </div>
                 </li>
@@ -34,42 +34,26 @@
     <main>
         <article>
             <section class="container-calc-video">
-                <div class="container-coluna">
-                    <h2 class="titulo-caloria">Calculadora de calorias</h2>
-                    <div class="container-form-calc">
+               <div class="container-coluna">
+                <h2 class="titulo-caloria">Calculadora de Calorias</h2>
+                <div class="container-form-calc">
+                    <h3>Peso atual: </h3>
+                    <input id="peso" class="input" placeholder="Ex: 72,5">
+                    <h3>Objetivo:</h3>
 
-
+                    <div class="container-objetivo">
+                        <button class="button-objetivo">Manter</button>
+                        <button class="button-objetivo">Engordar</button>
+                        <button class="button-objetivo">Emagrecer</button>
                     </div>
                 </div>
-                <div class="container-coluna">
-                    <h2 class="titulo-video">Vídeos</h2>
-                    <div class="container-area-video">
-
-
-                    </div>
+            </div>
+            <div class="container-coluna">
+                <h2 class="titulo-video">Vídeos:</h2>
+                <div class="container-area-video">
+                
                 </div>
-            </section>
-        </article>
-    </main>
-<!-- COISO DO SACHETTO -->
-    <main>
-        <article>
-            <section class="container-saude">
-                <div class="container-coluna">
-                    <h2 class="titulo-saude">Diário da saúde</h2>
-                    <div class="container-sintomas">
-                        <h3>Descreva aqui seus sintomas:</h3>
-                        <textarea id="text-sintomas" rows="15" placeholder=""></textarea>
-                        <button class="borda-inversa" id="btn-analizar">Analisar</button>
-                    </div>
-                </div>
-                <div class="container-coluna">
-                    <h2 class="titulo-resultado">Resultado</h2>
-                    <div class="container-resultado">
-                        <h3>Resultado analisado por IA:</h3>
-                        <p><span id="text-resultado"></span><span class="text-barrinha">|</span></p>
-                    </div>
-                </div>
+            </div>
             </section>
         </article>
     </main>
