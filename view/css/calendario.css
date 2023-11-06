@@ -90,6 +90,10 @@ button{
     height: 75px;
     background-color: #fa9897;
     border-radius: 13px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    
 }
 .lembrete-criado::-webkit-scrollbar {
     width: 8px;             
@@ -142,6 +146,11 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.03);
   box-shadow: rgba(0, 0, 0, 0.411) 5px 5px;
 
+}
+
+.excluir{
+    font-weight: 200;
+    cursor: pointer;
 }
 
 .inserir-info {
