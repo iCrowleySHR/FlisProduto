@@ -77,12 +77,11 @@ section .container-form-calc, section .container-area-video {
 
 .input {
     background-color: white;
-    height: 60px;
+    height: 70px;
     border-radius: 18px;
     font: lighter 20px var(--font-padrao);
     color: rgba(128, 128, 128, 0.61);
     width: 97%;
-
 
 }
 

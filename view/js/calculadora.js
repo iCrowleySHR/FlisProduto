@@ -1,18 +1,43 @@
-function calcularcalo(){
+document.querySelectorAll('.container-objetivo button').forEach(button => {
+    button.addEventListener('click', function() {
+        // Remova a classe "selecionado" de todos os botões
+        document.querySelectorAll('.container-objetivo button').forEach(btn => {
+            btn.classList.remove('selecionado');
+        });
 
-    let	n1 = parseFloat(document.getElementById('num_n1').value);
-    let	n2 = parseFloat(document.getElementById('num_n2').value);
-    let	n3 = parseFloat(document.getElementById('num_n3').value);
+        // Adicione a classe "selecionado" ao botão clicado
+        this.classList.add('selecionado');
 
-    if ((n1 + n2 > n3) && (n1 + n3 > n2) && (n2 + n3 > n1)){
-        alert("Os 3 lados formam um triangulo!")
-        if ((n1 == n2) && (n1 == n3)) {
-            alert("Equilatero")
-        }
-        else if((n1 == n2) || (n1 == n3) || (n2 == n3)) {
-            alert("Isosceles")
-        }
-        else {
-            alert("Escaleno")
-        }} else {
-            alert("Não é triangulo")} }
+        // Defina o valor da opção selecionada no campo de entrada escondido
+        const valor = this.getAttribute('data-value');
+        document.querySelector('input[name="objetivo"]').value = valor;
+    });
+});
+
+document.getElementById('btn-calccalor').addEventListener('click', calcularCalorias);
+
+function calcularCalorias() {
+    const peso = parseFloat(document.getElementById('peso').value);
+    const idade = parseInt(document.getElementById('idade').value);
+    const altura = parseFloat(document.getElementById('altura').value);
+    const objetivo = document.querySelector('input[name="objetivo"]').value;
+
+    if (!peso || isNaN(idade) || !altura || !objetivo) {
+        alert('Por favor, preencha todos os campos corretamente.');
+        return;
+    }
+
+    const bmr = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
+
+    let tdee;
+    if (objetivo === 'emagrecer') {
+        tdee = bmr * 1.2;
+    } else if (objetivo === 'manter') {
+        tdee = bmr * 1.375;
+    } else if (objetivo === 'engordar') {
+        tdee = bmr * 1.55;
+    }
+
+    const resultadoElement = document.getElementById('resultado');
+    resultadoElement.textContent = `Calorias Diárias: ${tdee.toFixed(2)}`;
+}
