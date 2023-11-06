@@ -31,12 +31,12 @@ h2 {
     font: 470 35px var(--font-padrao);
     text-shadow: 1px 1px 5px #0000000e;
     text-align: center;
-    border-radius: 17px;
+    border-radius: 18px;
 }
 
 h3 {
     padding: 6px 20px;
-    font: 30px var(--font-padrao);
+    font: normal 30px var(--font-padrao);
     text-shadow: 1px 1px 5px #0000000e;
     text-align: justify;
     color: white;
@@ -61,7 +61,7 @@ section .container-form-calc, section .container-area-video {
     color: white;
     font: normal 20px var(--font-padrao);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 .container-form-calc {
@@ -78,7 +78,20 @@ section .container-form-calc, section .container-area-video {
 .input {
     background-color: white;
     height: 60px;
-    border-radius: 20px;
+    border-radius: 18px;
+    font: lighter 20px var(--font-padrao);
+    color: rgba(128, 128, 128, 0.61);
+    width: 97%;
+
+
+}
+
+
+.input-alt-ida {
+    width: 95%;
+    background-color: white;
+    height: 60px;
+    border-radius: 18px;
     font: lighter 20px var(--font-padrao);
     color: rgba(128, 128, 128, 0.61);
 
@@ -89,16 +102,16 @@ section .container-form-calc, section .container-area-video {
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .button-manter {
-    margin-left: 0;
+    margin-left: 1%;
     background-color: white;
     color: rgba(65, 63, 63, 0.959);
-    font: lighter 100% var(--font-padrao);
-    border-radius: 13px;
-    padding: 2%;
+    font: normal 100% var(--font-padrao);
+    border-radius: 18px;
+    padding: 3%;
     width: 40%;
     transition: 900ms;
 }
@@ -106,15 +119,15 @@ section .container-form-calc, section .container-area-video {
 .button-objetivo {
     background-color: white;
     color: rgba(65, 63, 63, 0.959);
-    font: lighter 100% var(--font-padrao);
-    border-radius: 13px;
+    font: normal 100% var(--font-padrao);
+    border-radius: 18px;
     padding: 3%;
     width: 40%;
     transition: 900ms;
-    margin-left: 8%;
+    margin-left: 5%;
 }
 
-.button-objetivo:hover, .button-manter:hover {
+.button-objetivo:hover, .button-manter:hover, .borda-inversa:hover {
     cursor: pointer;
     
 }
@@ -139,15 +152,6 @@ section .container-form-calc, section .container-area-video {
     display: flex;
 }
 
-.input-alt-ida {
-    width: 95%;
-    background-color: white;
-    height: 60px;
-    border-radius: 20px;
-    font: lighter 20px var(--font-padrao);
-    color: rgba(128, 128, 128, 0.61);
-
-}
 
 .container-botaoCalc-Result {
     margin-top: 10px;
@@ -157,18 +161,16 @@ section .container-form-calc, section .container-area-video {
 
 }
 
-.area-btn-calc {
-    margin-top: 20px;
-}
-
 .borda-inversa {
+    
+    margin-left: -2%;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
     font: lighter 30px var(--font-padrao);
-    border-radius: 15px;
+    border-radius: 18px;
     color: white;
+    max-width: 90%;
     width: 100%;
-    max-width: 80%;
     background-color: #00bf62;
     display: inline-block;
     vertical-align: middle;
@@ -190,10 +192,16 @@ section .container-form-calc, section .container-area-video {
     color: #00bf62;
 }
 
+.resultado {
+    margin-right: 6%;
+    margin-left: -3%;
+
+}
+
 .mostraresultado {
     background-color: white;
     padding: 15%;
-    border-radius: 15px;
+    border-radius: 18px;
     transition: 900ms;
 
 }
@@ -202,25 +210,26 @@ section .container-form-calc, section .container-area-video {
     cursor: pointer;
 }
 
+
 /* @MEDIA */
-@media (max-width:1000px) {
+@media (max-width:1163px) {
 
     .mostraresultado {
         background-color: white;
         padding: 30px;
-        border-radius: 15px;
+        border-radius: 18px;
         margin-left: 2%;
     
     }
 
     .borda-inversa {
         padding: 15px;
-        margin-top: 10px;
+        margin-top: 38px;
         font: lighter 30px var(--font-padrao);
-        border-radius: 15px;
+        border-radius: 18px;
         color: white;
         width: 100%;
-        max-width: 200px;
+        max-width: 92%;
         background-color: #00bf62;
         display: inline-block;
         vertical-align: middle;
@@ -243,8 +252,7 @@ section .container-form-calc, section .container-area-video {
     }
 
     h3 { 
-        font: normal 95% var(--font-padrao);
-
+        font: normal 26px var(--font-padrao);
     }
 
     section .container-form-calc, section .container-area-video {
@@ -255,7 +263,7 @@ section .container-form-calc, section .container-area-video {
         color: white;
         font: normal 20px var(--font-padrao);
         background-color: white;
-        border-radius: 20px;
+        border-radius: 18px;
     }
 
     .container-coluna {
@@ -278,20 +286,32 @@ section .container-form-calc, section .container-area-video {
     }
 
     .input {
+        width: 98%;
         background-color: white;
-        height: 40px;
-        border-radius: 20px;
+        height: 60px;
+        border-radius: 18px;
         font: lighter 18px var(--font-padrao);
         color: rgba(128, 128, 128, 0.61);
         transition: 900ms;
         
     }
+
+    .input-alt-ida {
+        width: 95%;
+        background-color: white;
+        height: 60px;
+        border-radius: 18px;
+        font: lighter 20px var(--font-padrao);
+        color: rgba(128, 128, 128, 0.61);
+    
+    }
+    
     .button-manter {
-        margin-left: 0;
+        margin-left: 2%;
         background-color: white;
         color: rgba(65, 63, 63, 0.959);
-        font: lighter 90% var(--font-padrao);
-        border-radius: 13px;
+        font:normal 90% var(--font-padrao);
+        border-radius: 18px;
         padding: 2%;
         width: 20%;
         transition: 900ms;
@@ -301,11 +321,11 @@ section .container-form-calc, section .container-area-video {
         background-color: white;
         color: rgba(65, 63, 63, 0.959);
         font: normal 90% var(--font-padrao);
-        border-radius: 13px;
+        border-radius: 18px;
         padding: 2%;
-        width: 50%;
+        width: 30%;
         transition: 900ms;
-        margin-left: 8%;
+        margin-left: 2%;
     }
     
 }
