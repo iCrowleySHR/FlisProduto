@@ -37,7 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttonLembrete.addEventListener("click", function () {
         const inserirInfo = document.querySelector('.inserir-info');
+        const imgSair = document.querySelector('#img-sair')
         inserirInfo.style.display = 'flex';
+        imgSair.addEventListener('click',()=>{
+            inserirInfo.style.display='none'
+        })
 
         const btnInfo = document.querySelector('#btn-info');
 
@@ -62,3 +66,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
