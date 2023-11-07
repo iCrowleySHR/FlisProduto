@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | Exercícios</title>
+    <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/calculadora.js"></script>
+    <link rel="stylesheet" href="../css/videos.css">
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
+        <img src="../img/menu.png" alt="Icon Menu" class="menu-icon">
+        <nav class="nav-header">
+            <ul>
+                <li><a href="saude.html">Saúde</a></li>
+                <li id="menu-margem"><a href="videos.html">Educacional</a></li>
+                <li class="dropdown dropbtn">
+                    <div class="fitnessNav">Fitness</div>
+                    <div class="dropdown-content">
+                        <a href="alimentacao.html">Alimentação</a>
+                        <a href="calculadora.html">Calculadora</a>
+                        <a href="calendario.html">Calendário</a>
+                    </div>
+                </li>
+                <li><a href="../../index.html" class="inicio">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="container-calc-video">
+                <div class="container-coluna">
+                    <h2 class="titulo-caloria">Calculadora de calorias</h2>
+                    <div class="container-form-calc">
+                        <h3>Peso atual:</h3>
+                        <input id="peso" class="input" placeholder="Ex: 72,5">
+                            <h3>Objetivo:</h3> 
+                        <div class="container-objetivo">    
+                            <button class="button-manter" data-value="manter" >Manter</button>
+                            <button class="button-objetivo" data-value="engordar">Engordar</button>
+                            <button class="button-objetivo" data-value="emagrecer">Emagrecer</button>
+                        </div>
+                        <div class="container-idade-altura">
+                            <div class="idade">
+                                <h3>Idade:</h3>
+                                <input id="idade" class="input-alt-ida" placeholder="Ex: 35 anos">
+
+                            </div>
+
+                            <div class="altura">
+                                <h3>Altura:</h3>
+                                <input id="altura" class="input-alt-ida" placeholder="Ex: 160 cm">
+
+                            </div>
+                        </div>
+                        <div class="container-botaoCalc-Result">
+                            <div class="area-btn-calc">
+                                <button class="borda-inversa" id="btn-calccalor">Calcular</button>
+
+                            </div>
+
+                            <div class="resultado">
+                                <h3>Resultado:</h3>
+                                <p id="resultado" class="mostraresultado"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-coluna">
+                    <h2 class="titulo-video">Vídeos</h2>
+                    <div class="container-area-video">
+                        
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <br><br>
+    <footer>
+        <p>Todos os direitos reservados a Flis ©</p>
+    </footer>
+</body>
+</html>
