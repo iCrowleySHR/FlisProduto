@@ -164,7 +164,7 @@ section .container-form-calc, section .container-area-video {
     margin-left: 1%;
     display: grid;
     grid-template-columns: 50% 50%;
-
+    color: black;
 }
 
 .borda-inversa {
@@ -206,7 +206,7 @@ section .container-form-calc, section .container-area-video {
 
 .mostraresultado {
     background-color: white;
-    padding: 15%;
+    padding: 7%;
     border-radius: 18px;
     transition: 900ms;
 
@@ -222,10 +222,8 @@ section .container-form-calc, section .container-area-video {
 
     .mostraresultado {
         background-color: white;
-        padding: 30px;
         border-radius: 18px;
         margin-left: 2%;
-    
     }
 
     .borda-inversa {

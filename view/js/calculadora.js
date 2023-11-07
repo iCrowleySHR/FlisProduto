@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 tdee = bmr * activityLevel - 500;
             }
 
-            resultParagraph.textContent = `Seu TDEE é aproximadamente ${tdee.toFixed(2)} calorias por dia. Objetivo: ${selectedObjective}`;
+            resultParagraph.textContent = `Para que você consiga ${selectedObjective} você deve ingerir ${tdee.toFixed(2)} calorias por dia.`;
         }
     }
 });
