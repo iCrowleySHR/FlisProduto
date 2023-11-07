@@ -103,6 +103,8 @@ article> img{
     border-radius: 0px 0px 25px 25px;
 }
 
+
+
 .dropbtn {
     font-size: 20px;
     border: none;
@@ -226,11 +228,12 @@ section.plano:hover {
 .plano>a.ver-mais {
     text-align: center;
     text-decoration: none;
-    margin-top: 70px;
+    margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
     color: black;
     background-color: var(--cor-verde-claro);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.425);
 }
 
 .menu-icon{
@@ -306,7 +309,7 @@ a img:hover{
     font-size: 27px;
 }
 .sobre >h2{
-    font-weight: 800;
+    font-weight: 700;
 }
 .sobre > article{
     font-weight: 500;
@@ -325,6 +328,7 @@ a img:hover{
     border: solid 1px black;
     box-shadow: 3px 3px black;
 }
+
 .motivos{
     display: flex;
     justify-content: center;
