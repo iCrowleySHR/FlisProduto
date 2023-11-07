@@ -76,23 +76,30 @@ section .container-form-calc, section .container-area-video {
 }
 
 .input {
+    
+    padding: 7px;
+    outline: none;
     background-color: white;
     height: 70px;
     border-radius: 18px;
-    font: lighter 20px var(--font-padrao);
-    color: rgba(128, 128, 128, 0.61);
+    font: normal 20px var(--font-padrao);
+    color: rgb(0, 0, 0);
     width: 97%;
+    font-weight: 400;
 
 }
 
 
 .input-alt-ida {
+    padding: 7px;
+    outline: none;
     width: 95%;
     background-color: white;
     height: 60px;
     border-radius: 18px;
-    font: lighter 20px var(--font-padrao);
-    color: rgba(128, 128, 128, 0.61);
+    font: normal 20px var(--font-padrao);
+    color: rgb(0, 0, 0);
+    font-weight: 400;
 
 }
 
@@ -157,6 +164,7 @@ section .container-form-calc, section .container-area-video {
     margin-left: 1%;
     display: grid;
     grid-template-columns: 50% 50%;
+    color: black;
 
 }
 
@@ -165,7 +173,7 @@ section .container-form-calc, section .container-area-video {
     margin-left: -2%;
     padding: 15px;
     margin-top: 20px;
-    font: lighter 30px var(--font-padrao);
+    font: normal 30px var(--font-padrao);
     border-radius: 18px;
     color: white;
     max-width: 90%;
@@ -224,7 +232,7 @@ section .container-form-calc, section .container-area-video {
     .borda-inversa {
         padding: 15px;
         margin-top: 38px;
-        font: lighter 30px var(--font-padrao);
+        font: normal 30px var(--font-padrao);
         border-radius: 18px;
         color: white;
         width: 100%;
@@ -285,23 +293,29 @@ section .container-form-calc, section .container-area-video {
     }
 
     .input {
+        padding: 7px;
         width: 98%;
         background-color: white;
         height: 60px;
         border-radius: 18px;
-        font: lighter 18px var(--font-padrao);
-        color: rgba(128, 128, 128, 0.61);
+        font: normal 20px var(--font-padrao);
+        color: rgb(0, 0, 0);
+        font-weight: 400;
         transition: 900ms;
         
     }
 
     .input-alt-ida {
+        padding: 7px;
+        outline: none;
         width: 95%;
         background-color: white;
         height: 60px;
         border-radius: 18px;
-        font: lighter 20px var(--font-padrao);
-        color: rgba(128, 128, 128, 0.61);
+        font: normal 20px var(--font-padrao);
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+    
     
     }
     

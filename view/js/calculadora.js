@@ -1,43 +1,38 @@
-document.querySelectorAll('.container-objetivo button').forEach(button => {
-    button.addEventListener('click', function() {
-        // Remova a classe "selecionado" de todos os botões
-        document.querySelectorAll('.container-objetivo button').forEach(btn => {
-            btn.classList.remove('selecionado');
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const calculateButton = document.getElementById("btn-calccalor");
+    const resultParagraph = document.getElementById("resultado");
 
-        // Adicione a classe "selecionado" ao botão clicado
-        this.classList.add('selecionado');
+    calculateButton.addEventListener("click", calculateCalories);
 
-        // Defina o valor da opção selecionada no campo de entrada escondido
-        const valor = this.getAttribute('data-value');
-        document.querySelector('input[name="objetivo"]').value = valor;
-    });
+    function calculateCalories() {
+        const weight = parseFloat(document.getElementById("peso").value.replace(",", "."));
+        const age = parseInt(document.getElementById("idade").value);
+        const height = parseFloat(document.getElementById("altura").value.replace(" cm", ""));
+        const selectedObjective = document.querySelector('input[name="objetivo"]:checked').value;
+
+        if (isNaN(weight) || isNaN(age) || isNaN(height)) {
+            resultParagraph.textContent = "Por favor, insira valores válidos.";
+        } else {
+            const gender = "female";
+            const activityLevel = 1.375;
+            let bmr;
+
+            if (gender === "female") {
+                bmr = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+            } else {
+                bmr = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+            }
+
+            let tdee;
+            if (selectedObjective === "manter") {
+                tdee = bmr * activityLevel;
+            } else if (selectedObjective === "engordar") {
+                tdee = bmr * activityLevel + 500;
+            } else if (selectedObjective === "emagrecer") {
+                tdee = bmr * activityLevel - 500;
+            }
+
+            resultParagraph.textContent = `Seu TDEE é aproximadamente ${tdee.toFixed(2)} calorias por dia. Objetivo: ${selectedObjective}`;
+        }
+    }
 });
-
-document.getElementById('btn-calccalor').addEventListener('click', calcularCalorias);
-
-function calcularCalorias() {
-    const peso = parseFloat(document.getElementById('peso').value);
-    const idade = parseInt(document.getElementById('idade').value);
-    const altura = parseFloat(document.getElementById('altura').value);
-    const objetivo = document.querySelector('input[name="objetivo"]').value;
-
-    if (!peso || isNaN(idade) || !altura || !objetivo) {
-        alert('Por favor, preencha todos os campos corretamente.');
-        return;
-    }
-
-    const bmr = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade);
-
-    let tdee;
-    if (objetivo === 'emagrecer') {
-        tdee = bmr * 1.2;
-    } else if (objetivo === 'manter') {
-        tdee = bmr * 1.375;
-    } else if (objetivo === 'engordar') {
-        tdee = bmr * 1.55;
-    }
-
-    const resultadoElement = document.getElementById('resultado');
-    resultadoElement.textContent = `Calorias Diárias: ${tdee.toFixed(2)}`;
-}

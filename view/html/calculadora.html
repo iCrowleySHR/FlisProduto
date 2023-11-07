@@ -40,50 +40,49 @@
                     <h2 class="titulo-caloria">Calculadora de calorias</h2>
                     <div class="container-form-calc">
                         <h3>Peso atual:</h3>
-                        <input id="peso" class="input" placeholder="  Ex: 72,5">
-                            <h3>Objetivo:</h3>
-                        <div class="container-objetivo">    
-                            <button class="button-manter" data-value="manter">Manter</button>
-                            <button class="button-objetivo" data-value="engordar">Engordar</button>
-                            <button class="button-objetivo" data-value="emagrecer">Emagrecer</button>
-                        </div>
+                        <input id="peso" class="input" placeholder="Ex: 72,5">
+                            <h3>Objetivo:</h3> 
+                            <div class="container-objetivo">
+                                <form id="objective-form">
+                                    <input type="radio" id="manter" name="objetivo" value="manter">
+                                    <label for="manter">Manter</label>
+                            
+                                    <input type="radio" id="engordar" name="objetivo" value="engordar">
+                                    <label for="engordar">Engordar</label>
+                            
+                                    <input type="radio" id="emagrecer" name="objetivo" value="emagrecer">
+                                    <label for="emagrecer">Emagrecer</label>
+                                </form>
+                            </div>
                         <div class="container-idade-altura">
                             <div class="idade">
                                 <h3>Idade:</h3>
-                                <input id="idade" class="input-alt-ida" placeholder="  Ex: 35 anos">
-
+                                <input id="idade" class="input-alt-ida" placeholder="Ex: 35 anos">
                             </div>
-
                             <div class="altura">
                                 <h3>Altura:</h3>
-                                <input id="altura" class="input-alt-ida" placeholder="  Ex: 160 cm">
-
+                                <input id="altura" class="input-alt-ida" placeholder="Ex: 160 cm">
                             </div>
                         </div>
                         <div class="container-botaoCalc-Result">
                             <div class="area-btn-calc">
                                 <button class="borda-inversa" id="btn-calccalor">Calcular</button>
-
                             </div>
-
                             <div class="resultado">
                                 <h3>Resultado:</h3>
                                 <p id="resultado" class="mostraresultado"></p>
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="container-coluna">
                     <h2 class="titulo-video">Vídeos</h2>
                     <div class="container-area-video">
-                        
                     </div>
                 </div>
             </section>
         </article>
     </main>
-
     <br><br>
     <footer>
         <p>Todos os direitos reservados a Flis ©</p>
