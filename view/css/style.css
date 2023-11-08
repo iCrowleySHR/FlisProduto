@@ -37,7 +37,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       
     border: 1px solid gray; 
 }
-
+.video-vitrine{
+    display: flex;
+    flex-direction: column;
+}
 header {
     display: flex;
     align-items: center;
