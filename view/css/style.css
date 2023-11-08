@@ -103,8 +103,6 @@ article> img{
     border-radius: 0px 0px 25px 25px;
 }
 
-
-
 .dropbtn {
     font-size: 20px;
     border: none;
@@ -241,7 +239,6 @@ section.plano:hover {
 }
 
 .video-gif{
-
     width: 100%;
     margin-bottom: 50px;
 }
@@ -316,7 +313,7 @@ a img:hover{
     text-align: center;
     margin-left: 150px;
     margin-right: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 115px;
     margin-top: 8px;
 }
 .sobre > video{
