@@ -95,7 +95,7 @@ main{
     height: 430px;
     -webkit-box-shadow: 5px 5px 10px 7px #887777; 
     box-shadow: 5px 5px 10px 7px #887777;
-    margin-left: 25px;
+    margin-left: 70px;
     margin-right: 25px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -112,7 +112,7 @@ main{
 }
 .planos > ul{
     margin-top: 10px;
-    margin-left: -110px;
+    margin-left: 25px;
     margin-bottom: 10px;
 }
 .planos ul li{
