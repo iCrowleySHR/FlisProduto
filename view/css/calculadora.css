@@ -261,7 +261,8 @@ input[type=radio]:checked + label:before {
     display: none;
     overflow-x: scroll;
     flex-direction: row;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
 }
 .img-video0{
     display: flex;
