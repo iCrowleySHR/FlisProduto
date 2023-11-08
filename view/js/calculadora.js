@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const calculateButton = document.getElementById("btn-calccalor");
     const resultParagraph = document.getElementById("resultado");
 
+
     calculateButton.addEventListener("click", calculateCalories);
 
     function calculateCalories() {
@@ -9,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const age = parseInt(document.getElementById("idade").value);
         const height = parseFloat(document.getElementById("altura").value.replace(" cm", ""));
         const selectedObjective = document.querySelector('input[name="objetivo"]:checked').value;
+
+        resultParagraph.textContent = ``;
 
         if (isNaN(weight) || isNaN(age) || isNaN(height)) {
             resultParagraph.textContent = "Por favor, insira valores válidos.";
