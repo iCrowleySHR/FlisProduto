@@ -285,7 +285,6 @@ p > a{
 }
 .titulo{
     text-align: center;
-    margin-top: 100px;
     font-weight: 700;
     font-size: 35px;
 }
@@ -328,7 +327,6 @@ a img:hover{
     border: solid 1px black;
     box-shadow: 3px 3px black;
 }
-
 .motivos{
     display: flex;
     justify-content: center;
@@ -337,7 +335,7 @@ a img:hover{
 }
 .motivos > article{
     display: flex;  
-    text-align: justify;
+    text-align: center;
     flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
@@ -351,6 +349,7 @@ a img:hover{
     max-width: 75px;
     height: 75px;
 }
+
 .titulos{
     display: flex;
     align-items: center;
