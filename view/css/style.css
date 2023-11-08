@@ -37,7 +37,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       
     border: 1px solid gray; 
 }
-
+.video-vitrine{
+    display: flex;
+    flex-direction: column;
+}
 header {
     display: flex;
     align-items: center;
@@ -202,9 +205,15 @@ section.plano {
     border-radius: 13px;
     box-shadow: 1px 1px 10px #0000001c;
     background-color: white;
+    color: black;
     cursor: pointer;
 }
-
+.tudoPlanos{
+    color: white;
+    background-color: #212121;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 section.plano:hover {
     transform: scale(1.05);
 }
@@ -255,12 +264,16 @@ article > h2{
     align-items: center;
     flex-direction: column;
     margin-top: -10px;
+    background-color: #212121;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .sessao-videos p{
     text-align: center;
 }
 p > a{
-    color: black;
+    color: white;
 }
 .container-videos{
     border-radius: 25px;
@@ -300,9 +313,15 @@ a img:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    height: 600px;
+    padding-top: 90px;
+    padding-bottom: 1px;
     font-weight: 700;
+    background-color: #212121;
+    color: white;
     font-size: 27px;
+    margin-bottom: 50px;
+
 }
 .sobre >h2{
     font-weight: 700;
@@ -311,6 +330,7 @@ a img:hover{
     font-weight: 500;
     font-size: 23px;
     text-align: center;
+    padding-bottom: 25px;
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 115px;
@@ -322,7 +342,7 @@ a img:hover{
     border-radius: 15px;
     margin: 20px;
     border: solid 1px black;
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px white;
 }
 .motivos{
     display: flex;
@@ -383,7 +403,8 @@ a img:hover{
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 10px;
 }
 

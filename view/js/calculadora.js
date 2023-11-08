@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 tdee = bmr * activityLevel;
             } else if (selectedObjective === "engordar") {
                 let videoEngordar = document.querySelector('.video-engordar')
-                videoEngordar.style.display='block'
+                videoEngordar.style.display='flex'
                 tdee = bmr * activityLevel + 500;
             } else if (selectedObjective === "emagrecer") {
                 let videoEmagrecer = document.querySelector('.video-emagrecer')
-                videoEmagrecer.style.display='block'
+                videoEmagrecer.style.display='flex'
                 tdee = bmr * activityLevel - 500;
             }
 

@@ -45,6 +45,7 @@ h3 {
 }
 .video-vitrine{
     display: flex;
+    
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
@@ -133,6 +134,8 @@ section .container-form-calc, section .container-area-video {
     margin-left: 40px;
 
 }
+
+
 
 .tituobjetivo {
     margin-top: 10px;
@@ -257,6 +260,9 @@ input[type=radio]:checked + label:before {
 .video-manter, .video-emagrecer, .video-engordar{
     display: none;
     overflow-x: scroll;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
 }
 .img-video0{
     display: flex;
