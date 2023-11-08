@@ -40,6 +40,7 @@ h3 {
     text-shadow: 1px 1px 5px #0000000e;
     text-align: justify;
     color: white;
+    
 
 }
 
@@ -111,34 +112,71 @@ section .container-form-calc, section .container-area-video {
     margin-top: 1%;
 }
 
-.button-manter {
-    margin-left: 1%;
-    background-color: white;
-    color: rgba(65, 63, 63, 0.959);
-    font: normal 100% var(--font-padrao);
-    border-radius: 18px;
-    padding: 3%;
-    width: 40%;
-    transition: 900ms;
+#objective-form {
+    font: normal 23px var(--font-padrao);
 }
 
-.button-objetivo {
-    background-color: white;
-    color: rgba(65, 63, 63, 0.959);
-    font: normal 100% var(--font-padrao);
-    border-radius: 18px;
-    padding: 3%;
-    width: 40%;
-    transition: 900ms;
-    margin-left: 5%;
+#engordar {
+    margin-left: 40px;
 }
 
-.button-objetivo:hover, .button-manter:hover, .borda-inversa:hover {
+#emagrecer {
+    margin-left: 40px;
+
+}
+
+.tituobjetivo {
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
     cursor: pointer;
-    
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    font: normal 23px var(--font-padrao);
 }
+
+input[type=radio] {
+    display: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+ 
+    width: 20px;
+    height: 20px;
+  
+    border-radius:50%;
+ 
+    margin-right: 10px;
+    margin-bottom: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ee282888;
+    box-shadow: inset 0px 6px 3px 0px rgba(0, 0, 0, .3), 0px 1px 5px 0px rgba(255, 255, 255, 0.8);
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    
+
+
+}
+
 
 .container-idade-altura {
+    margin-top: 10px;
     margin-left: 0;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -165,6 +203,12 @@ section .container-form-calc, section .container-area-video {
     display: grid;
     grid-template-columns: 50% 50%;
     color: black;
+}
+
+
+.borda-inversa:hover {
+    cursor: pointer;
+    
 }
 
 .borda-inversa {
@@ -217,6 +261,7 @@ section .container-form-calc, section .container-area-video {
 }
 
 
+
 /* @MEDIA */
 @media (max-width:1163px) {
 
@@ -259,7 +304,7 @@ section .container-form-calc, section .container-area-video {
         font: normal 26px var(--font-padrao);
     }
 
-    section .container-form-calc, section .container-area-video {
+    section .container-form-calc {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -268,6 +313,19 @@ section .container-form-calc, section .container-area-video {
         font: normal 20px var(--font-padrao);
         background-color: white;
         border-radius: 18px;
+    }
+
+    section .container-area-video {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        color: white;
+        font: normal 20px var(--font-padrao);
+        background-color: white;
+        border-radius: 18px;
+
+
     }
 
     .container-coluna {
@@ -314,26 +372,6 @@ section .container-form-calc, section .container-area-video {
         font-weight: 400;
     }
     
-    .button-manter {
-        margin-left: 2%;
-        background-color: white;
-        color: rgba(65, 63, 63, 0.959);
-        font:normal 90% var(--font-padrao);
-        border-radius: 18px;
-        padding: 2%;
-        width: 20%;
-        transition: 900ms;
-    }
     
-    .button-objetivo {
-        background-color: white;
-        color: rgba(65, 63, 63, 0.959);
-        font: normal 90% var(--font-padrao);
-        border-radius: 18px;
-        padding: 2%;
-        width: 30%;
-        transition: 900ms;
-        margin-left: 2%;
-    }
     
 }
