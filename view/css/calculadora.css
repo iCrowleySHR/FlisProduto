@@ -43,6 +43,12 @@ h3 {
     
 
 }
+.video-vitrine{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
 
 .titulo-caloria {
     color: #636363;
@@ -113,6 +119,9 @@ section .container-form-calc, section .container-area-video {
 }
 
 #objective-form {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 15px;
     font: normal 23px var(--font-padrao);
 }
 
@@ -170,8 +179,6 @@ input[type=radio]:checked + label:before {
     align-items: center;
     line-height: 18px;
     
-
-
 }
 
 
@@ -247,7 +254,19 @@ input[type=radio]:checked + label:before {
     margin-left: -3%;
 
 }
-
+.video-manter, .video-emagrecer, .video-engordar{
+    display: none;
+    overflow-x: scroll;
+}
+.img-video0{
+    display: flex;
+    
+    box-shadow: black 2px 2px;
+    border: solid black 1px;
+    border-radius: 13px;
+    margin: 10px;
+    width: 250px;
+}
 .mostraresultado {
     background-color: white;
     padding: 7%;

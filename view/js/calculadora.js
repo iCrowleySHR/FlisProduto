@@ -28,10 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
             let tdee;
             if (selectedObjective === "manter") {
+                let videoManter = document.querySelector('.video-manter')
+                videoManter.style.display='flex'
                 tdee = bmr * activityLevel;
             } else if (selectedObjective === "engordar") {
+                let videoEngordar = document.querySelector('.video-engordar')
+                videoEngordar.style.display='block'
                 tdee = bmr * activityLevel + 500;
             } else if (selectedObjective === "emagrecer") {
+                let videoEmagrecer = document.querySelector('.video-emagrecer')
+                videoEmagrecer.style.display='block'
                 tdee = bmr * activityLevel - 500;
             }
 
