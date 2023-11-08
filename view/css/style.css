@@ -197,7 +197,7 @@ section.plano {
     margin-bottom: 60px;
     padding: 13px;
     width: 310px;
-    height: 480px;
+    height: 550px;
     transition: 300ms ease-out;
     border-radius: 13px;
     box-shadow: 1px 1px 10px #0000001c;
@@ -317,7 +317,7 @@ a img:hover{
     margin-bottom: 50px;
     margin-top: 8px;
 }
-.sobre > img{
+.sobre > video{
     max-width: 750px;
     width: 100%;
     border-radius: 15px;
@@ -333,7 +333,7 @@ a img:hover{
 }
 .motivos > article{
     display: flex;  
-    text-align: center;
+    text-align: justify;
     flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
@@ -341,6 +341,7 @@ a img:hover{
 }
 .motivos > article > h3{
     margin: 10px;
+    text-align: center;
 }
 .motivos > article > img{
     max-width: 75px;
@@ -387,7 +388,12 @@ a img:hover{
 }
 
 .canal-recomendado > a{
+    color: black;
+    transition: 300ms;
     text-decoration: none;
+}
+.canal-recomendado a:hover{
+    transform: scale(1.1);
 }
 
 .txt-canal{
