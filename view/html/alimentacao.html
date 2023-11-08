@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flis | Alimentação</title>
-        <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">    
-        <link rel="stylesheet" href="../css/alimentacao.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../slick/slick.js"></script>
-        <script defer src="../js/alimentacao.js"></script>
-    </head>    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flis | Alimentação</title>
+    <link rel="shortcut icon" href="../img/flis.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/alimentacao.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../slick/slick.js"></script>
+    <script defer src="../js/alimentacao.js"></script>
+</head>
+
 <body>
     <header>
         <a href="../../index.html"><img src="../img/logo.png" class="logo"></a>
@@ -34,24 +35,23 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <article>
-            <section class="container-calc-video">
-                <div class="container-coluna">
-                    <h2 class="titulo-alimento">Alimentação</h2>
-                    <div class="container-alimento">
-                        <h4>Você sabia que pode e deve usar a alimentação
-                            para cuidar da sua saúde? A natureza oferece
-                            muitos alimentos que são extremamente benéficos
-                            para a nossa saúde. Vamos conhecer alguns desses?
-                        </h4>
-
-                        </div>
-                    </div>
+            <div class="banner">
+                <h2 class="titulo-alimento">Alimentação</h2>
+                <div class="container-alimento">
+                    <h4>Você sabia que pode e deve usar a alimentação
+                        para cuidar da sua saúde? A natureza oferece
+                        muitos alimentos que são extremamente benéficos
+                        para a nossa saúde. Vamos conhecer alguns desses?
+                    </h4>
                 </div>
-                <div class="container-coluna">
-                <h2 class="titulo-frutas">Frutas</h2>
-                <div class="container-frutas">
+            </div>
+            <div class="container-calc-video">
+                <div class="container-coluna" id="coluna-frutas">
+                    <h2 class="titulo-frutas">Frutas</h2>
+                    <div class="container-frutas">
                         <div class="item" id="maca-texto">
                             <h2>Maçã</h2>
                             <p>A maçã é a primeira da lista dos alimentos saudáveis, pois é rica em fibras, vitamina C e numerosos antioxidantes.</p>
@@ -66,18 +66,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="container-coluna">
+                <div class="container-coluna" id="coluna-imagens">
                     <h2 class="titulo-imagem">Imagens</h2>
                     <div class="container-imagens">
                         <div class="carousel">
                             <img src="../img/apple.jpg">
                             <img src="../img/abacate.png">
                             <img src="../img/uva.png">
-                        </div>
-                    </div>                    
+                    </div>
                 </div>
-            </section>
+            </div>
+            </div>
         </article>
+    </main>
+
     <footer>
         <p>Todos os direitos reservados a Flis ©</p>
     </footer>
