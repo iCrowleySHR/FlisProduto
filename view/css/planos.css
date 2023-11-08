@@ -129,6 +129,7 @@ main{
 }
 .underline-lista{
     color: gray;
+    list-style: none;
     text-decoration: line-through;
 }
 .margem-lista{
